@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle} </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18125"> </HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN> 
+Log-masuk sebagai&nbsp; <B>
+{$username} </B> &nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}> 
+Log-masuk </A> </SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}> Log-keluar </A> {END logoutbutton}{BEGIN adminarea_link}<A class="rnr-button" href="admin_rights_list.php" {$adminarealink_attrs}> Admin Area </A> {END adminarea_link}{BEGIN changepwd_link}<A class="rnr-button" href="#" {$changepwdlink_attrs}> 
+Tukar katalaluan </A> {END changepwd_link}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN menu_block}{$menu main horizontal}{END menu_block}<DIV class="rnr-hfiller"></DIV>
+{BEGIN searchform_block}<DIV class="style1 rnr-br rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT type="text" size="25" {$searchfor_attrs}>{END searchform_text} 
+{BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}> </A> {END searchform_search}{BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}> Tunjuk semua </A> {END searchform_showall}</SPAN> </DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-br rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}> </A> <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}> </A> </SPAN> {END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-br rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class="searchPanelContainer">
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}><!-- Search panel content --> 
+<DIV class="srchCritTop" style="display: none;">       Criteria:&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN> all </SPAN>{END all_checkbox_label}      
+&nbsp;&nbsp;&nbsp; <INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN> any 
+</SPAN> {END any_checkbox_label}</DIV>
+<DIV class="addOption"><SPAN class="rnr-buttons-group"><A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}> 
+Add field </A> </SPAN> <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+{$showHideOpt_mess} </A> </DIV>
+<TABLE class="controlsBlock {$controls_block_class}">
+  <TBODY>
+  {BEGIN searchCtrlBlock}<TR class="srchPanelRow" {$filterRow_attrs}>
+    <TD class="srchPanelCell">{$delCtrlButt} </TD>
+    <TD class="srchPanelCell">
+      {$fLabel} :&nbsp; </TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">
+      {$searchtype} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1} </DIV></TD></TR>
+  {END searchCtrlBlock}{BEGIN searchCtrlBlock_refCode}<TR class="srchPanelRow {$filterRow_class_refCode}" {$filterRow_attrs_refCode}>
+    <TD class="srchPanelCell srchPanel-delBtn">{$delCtrlButt} </TD>
+    <TD class="srchPanelCell">
+      {$label reference_detail refCode} :&nbsp; </TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">{$searchtype_refCode} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol_refCode} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1_refCode} </DIV></TD></TR>
+  {END searchCtrlBlock_refCode}{BEGIN searchCtrlBlock_chapter}<TR class="srchPanelRow {$filterRow_class_chapter}" {$filterRow_attrs_chapter}>
+    <TD class="srchPanelCell srchPanel-delBtn">{$delCtrlButt} </TD>
+    <TD class="srchPanelCell">
+      {$label reference_detail chapter} :&nbsp; </TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">{$searchtype_chapter} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol_chapter} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1_chapter} </DIV></TD></TR>
+  {END searchCtrlBlock_chapter}{BEGIN searchCtrlBlock_refNo}<TR class="srchPanelRow {$filterRow_class_refNo}" {$filterRow_attrs_refNo}>
+    <TD class="srchPanelCell srchPanel-delBtn">{$delCtrlButt} </TD>
+    <TD class="srchPanelCell">
+      {$label reference_detail refNo} :&nbsp; </TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">{$searchtype_refNo} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol_refNo} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1_refNo} </DIV></TD></TR>
+  {END searchCtrlBlock_refNo}{BEGIN searchCtrlBlock_detail}<TR class="srchPanelRow {$filterRow_class_detail}" {$filterRow_attrs_detail}>
+    <TD class="srchPanelCell srchPanel-delBtn">{$delCtrlButt} </TD>
+    <TD class="srchPanelCell">
+      {$label reference_detail detail} :&nbsp; </TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">{$searchtype_detail} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol_detail} </DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1_detail} 
+</DIV></TD></TR>{END searchCtrlBlock_detail}</TBODY></TABLE>
+<DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}><A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}> Cari </A> 
+</DIV></DIV></DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}"> 
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN inlineadd_link}<A class="rnr-button" href="#" {$inlineaddlink_attrs}> Tambah baru </A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<SPAN class="rnr-buttons-group"><A class="rnr-button {$withSelectedClass}" id="selectButtonsToggler{$id}" href="#"> With selected... </A> 
+<UL class="rnr-list" id="selectButtonsGroup{$id}">
+  {BEGIN editselected_link}<LI><A class="rnr-button link" href="#" {$editselectedlink_attrs} {$editselectedlink_span}> 
+  Edit </A></LI>
+  {END editselected_link}{BEGIN deleteselected_link}<LI><A class="rnr-button link" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}> 
+  Delete </A></LI>{END deleteselected_link}</UL></SPAN> {END widhtSelected}{BEGIN saveall_link}<A class="rnr-button" href="#" {$savealllink_attrs} {$savealllink_span}> 
+Save all </A> {END saveall_link}{BEGIN cancelall_link}<A class="rnr-button" href="#" {$cancelalllink_attrs} {$cancelalllink_span}> Cancel </A> 
+{END cancelall_link}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class="rnr-buttons-group">{BEGIN moreButtons}<A class="rnr-button" id="extraButtonsToggler{$id}" href="#"> Lagi... </A> 
+<UL class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+  {BEGIN asearch_link}<LI><A class="rnr-button link" href="reference_detail_search.php" {$advsearchlink_attrs}> Carian maju </A></LI>
+  {END asearch_link}{BEGIN import_link}<LI><A class="rnr-button link" href="reference_detail_import.php?{$crosstable_attrs}" {$importlink_attrs}> Import </A></LI>{END import_link}</UL>{END moreButtons}</SPAN> 
+</DIV>
+{END more_list}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message} </DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}"></DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}> Perincian 
+dijumpai: <B><SPAN class="rnr-details_found_count">
+{$records_found} </SPAN> </B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"> 
+&nbsp;<SPAN {$pages_attrs}></SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}"> 
+ Rekod per halaman:&nbsp;
+{$recsPerPage} </SPAN> </DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" style="width: 833px;" cellpadding="0">
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH style="width: 25px;" ieditcont="all"> &nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH class="rnr-bc" style="width: 26px;"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN refCode_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$refCode_class}" style="width: 83px;">{BEGIN refCode_fieldheader}<SPAN {$refCode_orderlinkattrs}>
+      {$label reference_detail refCode} </SPAN> {END refCode_fieldheader}</TH>
+    {END refCode_fieldheadercolumn}{BEGIN chapter_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$chapter_class}" style="width: 86px;">{BEGIN chapter_fieldheader}<SPAN {$chapter_orderlinkattrs}>
+      {$label reference_detail chapter} </SPAN> {END chapter_fieldheader}</TH>
+    {END chapter_fieldheadercolumn}{BEGIN refNo_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$refNo_class}" style="width: 194px;">{BEGIN refNo_fieldheader}<SPAN {$refNo_orderlinkattrs}>
+      {$label reference_detail refNo} </SPAN> {END refNo_fieldheader}</TH>
+    {END refNo_fieldheadercolumn}{BEGIN detail_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$detail_class}" style="width: 600px;">{BEGIN detail_fieldheader}<SPAN {$detail_orderlinkattrs}>
+      {$label reference_detail detail} </SPAN> {END detail_fieldheader}</TH>
+    {END detail_fieldheadercolumn}<TH class="rnr-edge" style="width: 164px;"> &nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 11px;"> &nbsp;
+  </TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" style="width: 23px;" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Sunting" class="rnr-button-img" data-icon="inlineedit" {$inlineeditlink_attrs}> </A>{END inlineedit_link}{END inlineedit_column} </TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="rnr-bc" style="width: 24px;" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} </TD>
+    {END checkbox_column}{BEGIN refCode_fieldcolumn}<TD class="{$refCode_class}" style="width: 81px;" {$refCode_style} {$recordattrs}>
+      {$refCode_value} </TD>
+    {END refCode_fieldcolumn}{BEGIN chapter_fieldcolumn}<TD class="{$chapter_class}" style="width: 84px;" {$chapter_style} {$recordattrs}>
+      {$chapter_value} </TD>
+    {END chapter_fieldcolumn}{BEGIN refNo_fieldcolumn}<TD class="{$refNo_class}" style="width: 192px;" {$refNo_style} {$recordattrs}>
+      {$refNo_value} </TD>
+    {END refNo_fieldcolumn}{BEGIN detail_fieldcolumn}<TD class="{$detail_class}" style="width: 142px;" {$detail_style} {$recordattrs}>
+      {$detail_value} </TD>
+    {END detail_fieldcolumn}<TD class="rnr-edge" style="width: 162px;" {$recordattrs}> 
+      &nbsp;</TD>
+    {BEGIN endrecord_block}<TD class="rnr-cs" style="width: 11px;" {$endrecordblock_attrs}> 
+      &nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination} </DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}><B><SPAN class="rnr-details_found_count"><BR></SPAN> 
+</B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}><B><BR></B> 
+</SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">&nbsp;
+</SPAN> 
+</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV> 
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

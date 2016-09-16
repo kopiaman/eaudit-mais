@@ -1,0 +1,6 @@
+Import into reference_detail
+11/12/2015 18:20:10
+
+26 out of 26 records processed successfully.
+26 records added.
+0 records updated.

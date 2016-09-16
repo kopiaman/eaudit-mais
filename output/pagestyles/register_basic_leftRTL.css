@@ -1,0 +1,98 @@
+body.page-register_basic_left
+{
+padding-top:10px; padding-left:10px;
+}
+.page-register_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .page-register_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-register_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .page-register_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-c-fields
+{
+min-width: 400px; display:inline-block
+}
+.page-register_basic_left .rnr-cw-fields,
+  .rnr-pagewrapper .page-register_basic_left .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-cw-fields
+{
+text-align: left;
+}
+.page-register_basic_left .rnr-b-regheader,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader
+{
+white-space: nowrap;
+}
+.page-register_basic_left .rnr-b-regheader,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader
+{
+text-align: right;
+}
+.page-register_basic_left .rnr-b-regheader > *,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regheader > *
+{
+font-size: 120%;
+}
+.page-register_basic_left .rnr-b-message,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-register_basic_left .rnr-b-message,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-message
+{
+text-align: right;
+}
+.page-register_basic_left .rnr-b-message > *,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-message > *
+{
+
+}
+.page-register_basic_left .rnr-b-regfields_simple,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple
+{
+white-space: nowrap;
+}
+.page-register_basic_left .rnr-b-regfields_simple,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple
+{
+text-align: right;
+}
+.page-register_basic_left .rnr-b-regfields_simple > *,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regfields_simple > *
+{
+
+}
+.page-register_basic_left .rnr-b-regbuttons,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons
+{
+white-space: nowrap;
+}
+.page-register_basic_left .rnr-b-regbuttons,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons
+{
+text-align: center;
+}
+.page-register_basic_left .rnr-b-regbuttons > *,
+  .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_basic_left .rnr-b-regbuttons > *
+{
+
+}
+body.page-register_basic_left .rnr-top
+{
+padding-right: 5px;
+}

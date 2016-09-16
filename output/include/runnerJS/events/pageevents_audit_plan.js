@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("audit_plan",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button1';if(!pageObj.buttonEventBefore['New_Button1']){pageObj.buttonEventBefore['New_Button1']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['New_Button1']){pageObj.buttonEventAfter['New_Button1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id=New_Button1]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="New_Button1"+"_"+Runner.genId();var button_New_Button1=new Runner.form.Button({id:this.id,btnName:"New_Button1"});button_New_Button1.init({args:[pageObj,proxy,pageid]});});});

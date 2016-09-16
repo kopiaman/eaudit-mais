@@ -1,0 +1,86 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}<TABLE class="fieldGrid" bordercolor style="width: 600px;" bgcolor border="1" rules="all" cellspacing="2" cellpadding="1">
+  <TBODY>
+  {BEGIN jan_tabfieldblock}<TR class="{$fielddispclass_jan}" style="height: 32px;" data-fieldname="jan">
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title jan}</STRONG> JAN</td>
+	<TD class="rnr-control style3" style="width: 100px;" rowspan="1" colspan="1">   &nbsp;&nbsp;<STRONG>
+      {$label set_audit_title feb}</STRONG> FEB</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title mac}</STRONG> MAC</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title apr}</STRONG> APR</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title may}</STRONG> MEI</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><EM></EM><STRONG>
+      {$label set_audit_title jun}</STRONG> JUN</td>
+</tr>
+{END jan_tabfieldblock}
+{BEGIN feb_tabfieldblock}<tr class="{$fielddispclass_feb}" data-fieldname="feb">
+	<TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$jan_editcontrol} 
+    </td>
+	<TD class="rnr-control style3" style="width: 100px;" rowspan="1" colspan="1">
+      {$feb_editcontrol}&nbsp;
+	</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$mac_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$apr_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$may_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$jun_editcontrol} 
+    </td>
+</tr>
+{END feb_tabfieldblock}
+{BEGIN may_tabfieldblock}<tr class="{$fielddispclass_may}" data-fieldname="may">
+	<TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title jul}</STRONG> JUL</td>
+	<TD class="rnr-control style3" style="width: 100px;" rowspan="1" colspan="1">   &nbsp;&nbsp;<STRONG>
+      {$label set_audit_title aug}</STRONG> OGO</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title sep}</STRONG> SEP</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title oct}</STRONG> OKT</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"><STRONG></STRONG><STRONG>
+      {$label set_audit_title nov}</STRONG>
+     NOV</TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1"> <STRONG></STRONG><STRONG>
+      {$label set_audit_title dece}</STRONG>
+     DEC</td>
+</tr>
+{END may_tabfieldblock}
+{BEGIN jul_tabfieldblock}<tr class="{$fielddispclass_jul}" data-fieldname="jul">
+	<TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$jul_editcontrol}&nbsp;
+	</TD>
+    <TD class="rnr-control style3" style="width: 100px;" rowspan="1" colspan="1">   &nbsp;&nbsp;
+      {$aug_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$sep_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$oct_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$nov_editcontrol} 
+    </TD>
+    <TD class="rnr-control style3 runner-cc" style="width: 100px;" rowspan="1" colspan="1">
+      {$dece_editcontrol} 
+    </td>
+</tr>
+{END jul_tabfieldblock}
+</TBODY></table>
+
+
+
+
+{END container_1}
+
+</div>

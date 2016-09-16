@@ -1,0 +1,34 @@
+
+ .rnr-left, .rnr-center {
+ background: #fcfcfc !important;
+ }
+  
+div.style1.rnr-bc.rnr-b-pagination > b, .pag_n:hover{  
+-webkit-background-clip: border-box;    
+background-clip: border-box;    
+background: #eb6a5a;
+border: 1px solid #eb6a5a;
+color: #fff;
+font-weight: 700;  
+padding: 5px 11px 5px 11px;
+}
+
+div.style1.rnr-bc.rnr-b-pagination > b:first-child, 
+div.style1.rnr-bc.rnr-b-pagination > b:last-child {
+display: none;
+}
+
+.pag_n:hover {
+font-weight: normal !important;  
+}
+
+.pag_n {
+-webkit-background-clip: border-box;    
+background-clip: border-box;    
+border: 1px solid #dddddd;
+background: #ffffff;
+color: rgb(124, 124, 124);
+font-weight: normal; 
+padding: 5px 11px 5px 11px;
+
+}

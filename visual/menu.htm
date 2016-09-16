@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18125"></HEAD> 
+<BODY class="{$stylename} function-menu" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_menu}
+<DIV class="rnr-c rnr-cv rnr-c-menu">
+{BEGIN loggedas_block}<DIV class="rnr-brickcontents style2 rnr-b-login_menu {$brickclass_login_menu}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Log-masuk  
+sebagai&nbsp;<B> 
+{$username}</B>&nbsp;<A class="rnr-button button" id="New_Button" href="#" typeid="ib">New_Button</A><BR><BR></SPAN> 
+{END loggedas_message}{BEGIN guestloginbutton}<A class="rnr-button" href="#" {$guestloginlink_attrs}>Log-masuk</A> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="login.php?a=logout" {$logoutlink_attrs}>Log-keluar</A> 
+<!-- Permissions --> 
+{END logoutbutton}{BEGIN adminarea_link}<DIV><A class="rnr-button" href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</A> </DIV>
+{END adminarea_link}{BEGIN changepwd_link}<DIV><A class="rnr-button" href="changepwd.php" {$changepwdlink_attrs}>Tukar katalaluan</A> 
+</DIV>{END changepwd_link}</DIV></DIV>
+{END loggedas_block}{BEGIN menu_block}{$menu main}{END menu_block}</DIV> {END container_menu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

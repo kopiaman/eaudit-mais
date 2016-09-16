@@ -1,0 +1,55 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN aid_tabfieldblock}
+<tr class="{$fielddispclass_aid}" data-fieldname="aid">
+	<td class="style1 rnr-label">
+		{BEGIN aid_label}{$label set_audit_title aid}{END aid_label}
+	</td>
+	<td class="rnr-control style3">
+		{$aid_editcontrol}&nbsp;
+	</td>
+</tr>
+{END aid_tabfieldblock}
+{BEGIN aTitle_tabfieldblock}
+<tr class="{$fielddispclass_aTitle}" data-fieldname="aTitle">
+	<td class="style1 rnr-label">
+		{BEGIN aTitle_label}{$label set_audit_title aTitle}{END aTitle_label}
+	</td>
+	<td class="rnr-control style3">
+		{$aTitle_editcontrol}&nbsp;
+	</td>
+</tr>
+{END aTitle_tabfieldblock}
+{BEGIN procedureID_tabfieldblock}
+<tr class="{$fielddispclass_procedureID}" data-fieldname="procedureID">
+	<td class="style1 rnr-label">
+		{BEGIN procedureID_label}{$label set_audit_title procedureID}{END procedureID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$procedureID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END procedureID_tabfieldblock}
+{BEGIN notes_tabfieldblock}
+<tr class="{$fielddispclass_notes}" data-fieldname="notes">
+	<td class="style1 rnr-label">
+		{BEGIN notes_label}{$label set_audit_title notes}{END notes_label}
+	</td>
+	<td class="rnr-control style3">
+		{$notes_editcontrol}&nbsp;
+	</td>
+</tr>
+{END notes_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

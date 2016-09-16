@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18125"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_master}
+<DIV class="rnr-c rnr-ch rnr-c-master">
+{BEGIN mastertable_block}<DIV class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">
+{$showmasterfile} <A class="runner-link" {$backtomasterlink_attrs}><B><FONT color="#ffff00">Back to 
+</FONT><FONT color="#ffff00"> </FONT><FONT 
+color="#ffff00">
+{$backtomasterlink_caption}</FONT></B><FONT 
+color="#ffff00"> </FONT></A></DIV>
+{END mastertable_block}<DIV class="rnr-hfiller"></DIV></DIV>{END container_master}
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Log-masuk 
+ sebagai&nbsp;<B> 
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Log-masuk</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}>Log-keluar</A> {END logoutbutton}{BEGIN adminarea_link}<A class="rnr-button" href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</A> {END adminarea_link}{BEGIN changepwd_link}<A class="rnr-button" href="#" {$changepwdlink_attrs}>Tukar 
+ katalaluan</A> {END changepwd_link}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN menu_block}{$menu main horizontal}{END menu_block}<DIV class="rnr-hfiller"></DIV>
+<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN add_link}<A class="rnr-button" href="audit_info_add.php{$addlink_getparams}" {$addlink_attrs}>Tambah baru</A> {END add_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<SPAN class="rnr-buttons-group"><A class="rnr-button {$withSelectedClass}" id="selectButtonsToggler{$id}" href="#">With selected...</A> 
+<UL class="rnr-list" id="selectButtonsGroup{$id}">
+  {BEGIN deleteselected_link}<LI><A class="rnr-button link" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</A></LI>{END deleteselected_link}</UL></SPAN> 
+{END widhtSelected}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class="rnr-buttons-group"></SPAN></DIV>
+{END more_list}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Perincian 
+ dijumpai: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Halaman <B>
+{$page}</B> dari <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Rekod 
+ per halaman:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" bordercolor bgcolor border="0" rules cellspacing="2" cellpadding="0">
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1" ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH class="rnr-bc" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN finding_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$finding_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN finding_fieldheader}<SPAN {$finding_orderlinkattrs}>
+      {$label audit_info finding} </SPAN> {END finding_fieldheader}</TH>
+    {END finding_fieldheadercolumn}{BEGIN refyID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$refyID_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN refyID_fieldheader}<SPAN {$refyID_orderlinkattrs}>
+      {$label audit_info refyID} </SPAN> {END refyID_fieldheader}</TH>
+    {END refyID_fieldheadercolumn}{BEGIN suggest_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$suggest_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN suggest_fieldheader}<SPAN {$suggest_orderlinkattrs}>
+      {$label audit_info suggest} </SPAN> {END suggest_fieldheader}</TH>
+    {END suggest_fieldheadercolumn}{BEGIN attachment_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$attachment_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN attachment_fieldheader}<SPAN {$attachment_orderlinkattrs}>
+      {$label audit_info attachment} </SPAN> {END attachment_fieldheader}</TH>
+    {END attachment_fieldheadercolumn}{BEGIN answer_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$answer_class}" style="white-space: nowrap; background-image: none; background-color: rgb(255, 215, 0);" rowspan="1" colspan="2">{BEGIN answer_fieldheader}<SPAN {$answer_orderlinkattrs}>
+      {$label audit_info answer} </SPAN> {END answer_fieldheader}</TH>
+    {END answer_fieldheadercolumn}{BEGIN noteAmend_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$noteAmend_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN noteAmend_fieldheader}<SPAN {$noteAmend_orderlinkattrs}>
+      {$label audit_info noteAmend} </SPAN> {END noteAmend_fieldheader}</TH>
+    {END noteAmend_fieldheadercolumn}{BEGIN answer2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$answer2_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="2">{BEGIN answer2_fieldheader}<SPAN {$answer2_orderlinkattrs}>
+      {$label audit_info answer2} </SPAN> {END answer2_fieldheader}</TH>
+    {END answer2_fieldheadercolumn}{BEGIN noteAmend2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$noteAmend2_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">{BEGIN noteAmend2_fieldheader}<SPAN {$noteAmend2_orderlinkattrs}>
+      {$label audit_info noteAmend2} </SPAN> {END noteAmend2_fieldheader}</TH>
+    {END noteAmend2_fieldheadercolumn}{BEGIN answer3_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$answer3_class}" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="3">{BEGIN answer3_fieldheader}<SPAN {$answer3_orderlinkattrs}>
+      {$label audit_info answer3} </SPAN> {END answer3_fieldheader}</TH>
+    {END answer3_fieldheadercolumn}{BEGIN endrecordheader_block}<TH class="rnr-cs" style="white-space: nowrap; background-color: rgb(255, 215, 0);" rowspan="1" colspan="1">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Sunting" class="rnr-button-img" data-icon="edit" {$editlink_attrs}></A>{END edit_link}{END edit_column} </TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="rnr-bc" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} </TD>
+    {END checkbox_column}{BEGIN finding_fieldcolumn}<TD class="{$finding_class}" rowspan="1" colspan="1" {$finding_style} {$recordattrs}>
+      {$finding_value} </TD>
+    {END finding_fieldcolumn}{BEGIN refyID_fieldcolumn}<TD class="{$refyID_class}" rowspan="1" colspan="1" {$refyID_style} {$recordattrs}>
+      {$refyID_value} </TD>
+    {END refyID_fieldcolumn}{BEGIN suggest_fieldcolumn}<TD class="{$suggest_class}" rowspan="1" colspan="1" {$suggest_style} {$recordattrs}>
+      {$suggest_value} </TD>
+    {END suggest_fieldcolumn}{BEGIN attachment_fieldcolumn}<TD class="{$attachment_class}" rowspan="1" colspan="1" {$attachment_style} {$recordattrs}>
+      {$attachment_value} </TD>
+    {END attachment_fieldcolumn}{BEGIN answer_fieldcolumn}<TD class="{$answer_class}" rowspan="1" colspan="2" {$answer_style} {$recordattrs}>
+      {$answer_value} 
+      {$reply_attachment_value} </TD>
+    {END answer_fieldcolumn}{BEGIN noteAmend_fieldcolumn}<TD class="{$noteAmend_class}" rowspan="1" colspan="1" {$noteAmend_style} {$recordattrs}>
+      {$noteAmend_value} </TD>
+    {END noteAmend_fieldcolumn}{BEGIN answer2_fieldcolumn}<TD class="{$answer2_class}" rowspan="1" colspan="2" {$answer2_style} {$recordattrs}>
+      {$answer2_value} 
+      {$reply_attachment2_value} </TD>
+    {END answer2_fieldcolumn}{BEGIN noteAmend2_fieldcolumn}<TD class="{$noteAmend2_class}" rowspan="1" colspan="1" {$noteAmend2_style} {$recordattrs}>
+      {$noteAmend2_value} </TD>
+    {END noteAmend2_fieldcolumn}{BEGIN answer3_fieldcolumn}<TD class="{$answer3_class}" rowspan="1" colspan="3" {$answer3_style} {$recordattrs}>
+      {$answer3_value} 
+      {$reply_attachment3_value}&nbsp; </TD>
+    {END answer3_fieldcolumn}{BEGIN endrecord_block}<TD class="rnr-cs" rowspan="1" colspan="1" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Perincian 
+ dijumpai: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Halaman <B>
+{$page}</B> dari <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Rekod 
+ per halaman:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV>
+{$footer}{END body} </BODY></HTML>

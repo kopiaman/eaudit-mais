@@ -1,0 +1,320 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel set_audit_title print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Halaman <span class="rp-pageno">{$pageno}</span> dari <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN tid_fieldheadercolumn}
+<th class="runner-cc {$tid_class}" {$tid_style}>
+	{BEGIN tid_fieldheader}
+	<b>{$label set_audit_title tid}</b>
+	{END tid_fieldheader}
+</th>
+{END tid_fieldheadercolumn}
+	{BEGIN aid_fieldheadercolumn}
+<th class="runner-cc {$aid_class}" {$aid_style}>
+	{BEGIN aid_fieldheader}
+	<b>{$label set_audit_title aid}</b>
+	{END aid_fieldheader}
+</th>
+{END aid_fieldheadercolumn}
+	{BEGIN aTitle_fieldheadercolumn}
+<th class="runner-cc {$aTitle_class}" {$aTitle_style}>
+	{BEGIN aTitle_fieldheader}
+	<b>{$label set_audit_title aTitle}</b>
+	{END aTitle_fieldheader}
+</th>
+{END aTitle_fieldheadercolumn}
+	{BEGIN aYear_fieldheadercolumn}
+<th class="runner-cc {$aYear_class}" {$aYear_style}>
+	{BEGIN aYear_fieldheader}
+	<b>{$label set_audit_title aYear}</b>
+	{END aYear_fieldheader}
+</th>
+{END aYear_fieldheadercolumn}
+	{BEGIN jan_fieldheadercolumn}
+<th class="runner-cc {$jan_class}" {$jan_style}>
+	{BEGIN jan_fieldheader}
+	<b>{$label set_audit_title jan}</b>
+	{END jan_fieldheader}
+</th>
+{END jan_fieldheadercolumn}
+	{BEGIN feb_fieldheadercolumn}
+<th class="runner-cc {$feb_class}" {$feb_style}>
+	{BEGIN feb_fieldheader}
+	<b>{$label set_audit_title feb}</b>
+	{END feb_fieldheader}
+</th>
+{END feb_fieldheadercolumn}
+	{BEGIN mac_fieldheadercolumn}
+<th class="runner-cc {$mac_class}" {$mac_style}>
+	{BEGIN mac_fieldheader}
+	<b>{$label set_audit_title mac}</b>
+	{END mac_fieldheader}
+</th>
+{END mac_fieldheadercolumn}
+	{BEGIN apr_fieldheadercolumn}
+<th class="runner-cc {$apr_class}" {$apr_style}>
+	{BEGIN apr_fieldheader}
+	<b>{$label set_audit_title apr}</b>
+	{END apr_fieldheader}
+</th>
+{END apr_fieldheadercolumn}
+	{BEGIN may_fieldheadercolumn}
+<th class="runner-cc {$may_class}" {$may_style}>
+	{BEGIN may_fieldheader}
+	<b>{$label set_audit_title may}</b>
+	{END may_fieldheader}
+</th>
+{END may_fieldheadercolumn}
+	{BEGIN jun_fieldheadercolumn}
+<th class="runner-cc {$jun_class}" {$jun_style}>
+	{BEGIN jun_fieldheader}
+	<b>{$label set_audit_title jun}</b>
+	{END jun_fieldheader}
+</th>
+{END jun_fieldheadercolumn}
+	{BEGIN jul_fieldheadercolumn}
+<th class="runner-cc {$jul_class}" {$jul_style}>
+	{BEGIN jul_fieldheader}
+	<b>{$label set_audit_title jul}</b>
+	{END jul_fieldheader}
+</th>
+{END jul_fieldheadercolumn}
+	{BEGIN aug_fieldheadercolumn}
+<th class="runner-cc {$aug_class}" {$aug_style}>
+	{BEGIN aug_fieldheader}
+	<b>{$label set_audit_title aug}</b>
+	{END aug_fieldheader}
+</th>
+{END aug_fieldheadercolumn}
+	{BEGIN sep_fieldheadercolumn}
+<th class="runner-cc {$sep_class}" {$sep_style}>
+	{BEGIN sep_fieldheader}
+	<b>{$label set_audit_title sep}</b>
+	{END sep_fieldheader}
+</th>
+{END sep_fieldheadercolumn}
+	{BEGIN oct_fieldheadercolumn}
+<th class="runner-cc {$oct_class}" {$oct_style}>
+	{BEGIN oct_fieldheader}
+	<b>{$label set_audit_title oct}</b>
+	{END oct_fieldheader}
+</th>
+{END oct_fieldheadercolumn}
+	{BEGIN nov_fieldheadercolumn}
+<th class="runner-cc {$nov_class}" {$nov_style}>
+	{BEGIN nov_fieldheader}
+	<b>{$label set_audit_title nov}</b>
+	{END nov_fieldheader}
+</th>
+{END nov_fieldheadercolumn}
+	{BEGIN dec_fieldheadercolumn}
+<th class="runner-cc {$dec_class}" {$dec_style}>
+	{BEGIN dec_fieldheader}
+	<b>{$label set_audit_title dec}</b>
+	{END dec_fieldheader}
+</th>
+{END dec_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN tid_fieldcolumn}
+<td  class="runner-cc {$tid_class}" {$tid_style} {$recordattrs}>
+	{$tid_value}
+</td>
+{END tid_fieldcolumn}
+	{BEGIN aid_fieldcolumn}
+<td  class="runner-cc {$aid_class}" {$aid_style} {$recordattrs}>
+	{$aid_value}
+</td>
+{END aid_fieldcolumn}
+	{BEGIN aTitle_fieldcolumn}
+<td  class="runner-cc {$aTitle_class}" {$aTitle_style} {$recordattrs}>
+	{$aTitle_value}
+</td>
+{END aTitle_fieldcolumn}
+	{BEGIN aYear_fieldcolumn}
+<td  class="runner-cc {$aYear_class}" {$aYear_style} {$recordattrs}>
+	{$aYear_value}
+</td>
+{END aYear_fieldcolumn}
+	{BEGIN jan_fieldcolumn}
+<td  class="runner-cc {$jan_class}" {$jan_style} {$recordattrs}>
+	{$jan_value}
+</td>
+{END jan_fieldcolumn}
+	{BEGIN feb_fieldcolumn}
+<td  class="runner-cc {$feb_class}" {$feb_style} {$recordattrs}>
+	{$feb_value}
+</td>
+{END feb_fieldcolumn}
+	{BEGIN mac_fieldcolumn}
+<td  class="runner-cc {$mac_class}" {$mac_style} {$recordattrs}>
+	{$mac_value}
+</td>
+{END mac_fieldcolumn}
+	{BEGIN apr_fieldcolumn}
+<td  class="runner-cc {$apr_class}" {$apr_style} {$recordattrs}>
+	{$apr_value}
+</td>
+{END apr_fieldcolumn}
+	{BEGIN may_fieldcolumn}
+<td  class="runner-cc {$may_class}" {$may_style} {$recordattrs}>
+	{$may_value}
+</td>
+{END may_fieldcolumn}
+	{BEGIN jun_fieldcolumn}
+<td  class="runner-cc {$jun_class}" {$jun_style} {$recordattrs}>
+	{$jun_value}
+</td>
+{END jun_fieldcolumn}
+	{BEGIN jul_fieldcolumn}
+<td  class="runner-cc {$jul_class}" {$jul_style} {$recordattrs}>
+	{$jul_value}
+</td>
+{END jul_fieldcolumn}
+	{BEGIN aug_fieldcolumn}
+<td  class="runner-cc {$aug_class}" {$aug_style} {$recordattrs}>
+	{$aug_value}
+</td>
+{END aug_fieldcolumn}
+	{BEGIN sep_fieldcolumn}
+<td  class="runner-cc {$sep_class}" {$sep_style} {$recordattrs}>
+	{$sep_value}
+</td>
+{END sep_fieldcolumn}
+	{BEGIN oct_fieldcolumn}
+<td  class="runner-cc {$oct_class}" {$oct_style} {$recordattrs}>
+	{$oct_value}
+</td>
+{END oct_fieldcolumn}
+	{BEGIN nov_fieldcolumn}
+<td  class="runner-cc {$nov_class}" {$nov_style} {$recordattrs}>
+	{$nov_value}
+</td>
+{END nov_fieldcolumn}
+	{BEGIN dec_fieldcolumn}
+<td  class="runner-cc {$dec_class}" {$dec_style} {$recordattrs}>
+	{$dec_value}
+</td>
+{END dec_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

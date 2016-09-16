@@ -1,0 +1,198 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel admin_users search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Semua syarat-syarat</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Mana-mana syarat</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_fullName}">
+	{BEGIN fullName_fieldblock}		
+	<td>
+		{$label admin_users fullName}
+	</td>
+	<td>
+		<input type="checkbox" {$fullName_notbox}>
+	</td>
+	<td>
+		{$searchtype_fullName}
+	</td>
+	<td>
+		{$fullName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fullName_editcontrol1}&nbsp;
+	</td>
+{END fullName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_pass}">
+	{BEGIN pass_fieldblock}		
+	<td>
+		{$label admin_users pass}
+	</td>
+	<td>
+		<input type="checkbox" {$pass_notbox}>
+	</td>
+	<td>
+		{$searchtype_pass}
+	</td>
+	<td>
+		{$pass_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$pass_editcontrol1}&nbsp;
+	</td>
+{END pass_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_email}">
+	{BEGIN email_fieldblock}		
+	<td>
+		{$label admin_users email}
+	</td>
+	<td>
+		<input type="checkbox" {$email_notbox}>
+	</td>
+	<td>
+		{$searchtype_email}
+	</td>
+	<td>
+		{$email_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$email_editcontrol1}&nbsp;
+	</td>
+{END email_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_seksyen}">
+	{BEGIN seksyen_fieldblock}		
+	<td>
+		{$label admin_users seksyen}
+	</td>
+	<td>
+		<input type="checkbox" {$seksyen_notbox}>
+	</td>
+	<td>
+		{$searchtype_seksyen}
+	</td>
+	<td>
+		{$seksyen_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$seksyen_editcontrol1}&nbsp;
+	</td>
+{END seksyen_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unit}">
+	{BEGIN unit_fieldblock}		
+	<td>
+		{$label admin_users unit}
+	</td>
+	<td>
+		<input type="checkbox" {$unit_notbox}>
+	</td>
+	<td>
+		{$searchtype_unit}
+	</td>
+	<td>
+		{$unit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unit_editcontrol1}&nbsp;
+	</td>
+{END unit_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Cari</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Set semula</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Kembali ke senarai</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,716 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_master}<DIV class="rnr-c rnr-ch rnr-c-master">
+{BEGIN mastertable_block}<DIV class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">
+{$showmasterfile} <A class="runner-link" {$backtomasterlink_attrs}><B> Back to 
+{$backtomasterlink_caption} </B> </A> </DIV>
+{END mastertable_block}<DIV class="rnr-hfiller"></DIV></DIV>{END container_master}
+{BEGIN container_toplinks}<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message}<span>Log-masuk sebagai&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Log-masuk</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}<a href="#" class="rnr-button" {$logoutlink_attrs}>Log-keluar</a>
+	{END logoutbutton}
+	{BEGIN adminarea_link}<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Admin Area</a>
+	{END adminarea_link}
+
+	{BEGIN changepwd_link}<a href="#" class="rnr-button" {$changepwdlink_attrs}>Tukar katalaluan</a>
+	{END changepwd_link}
+</div></div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+{BEGIN searchform_block}<div  class="style1 rnr-br rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Tunjuk semua</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}<div  class="style1 rnr-br rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}<div  class="style1 rnr-br rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN searchPanel}<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				<TBODY>
+  {BEGIN searchCtrlBlock}<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+		 
+		{BEGIN searchCtrlBlock_agency}<tr class="srchPanelRow {$filterRow_class_agency}" {$filterRow_attrs_agency}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual agency}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_agency}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_agency}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_agency}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_agency}
+		 
+		{BEGIN searchCtrlBlock_department}<tr class="srchPanelRow {$filterRow_class_department}" {$filterRow_attrs_department}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual department}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_department}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_department}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_department}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_department}
+		 
+		{BEGIN searchCtrlBlock_sector}<tr class="srchPanelRow {$filterRow_class_sector}" {$filterRow_attrs_sector}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual sector}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_sector}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_sector}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_sector}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_sector}
+		 
+		{BEGIN searchCtrlBlock_paid}<tr class="srchPanelRow {$filterRow_class_paid}" {$filterRow_attrs_paid}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual paid}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_paid}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_paid}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_paid}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_paid}
+		 
+		{BEGIN searchCtrlBlock_bulan}<tr class="srchPanelRow {$filterRow_class_bulan}" {$filterRow_attrs_bulan}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual bulan}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_bulan}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_bulan}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_bulan}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_bulan}
+		 
+		{BEGIN searchCtrlBlock_aStatus}<tr class="srchPanelRow {$filterRow_class_aStatus}" {$filterRow_attrs_aStatus}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual aStatus}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_aStatus}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_aStatus}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_aStatus}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_aStatus}
+		 
+		{BEGIN searchCtrlBlock_tahun}<tr class="srchPanelRow {$filterRow_class_tahun}" {$filterRow_attrs_tahun}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual tahun}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_tahun}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_tahun}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_tahun}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_tahun}
+		 
+		{BEGIN searchCtrlBlock_userID}<tr class="srchPanelRow {$filterRow_class_userID}" {$filterRow_attrs_userID}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual userID}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_userID}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_userID}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_userID}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_userID}
+		 
+		{BEGIN searchCtrlBlock_userAuditee}<tr class="srchPanelRow {$filterRow_class_userAuditee}" {$filterRow_attrs_userAuditee}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual userAuditee}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_userAuditee}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_userAuditee}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_userAuditee}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_userAuditee}
+		 
+		{BEGIN searchCtrlBlock_aDate}<tr class="srchPanelRow {$filterRow_class_aDate}" {$filterRow_attrs_aDate}>
+						<td class="srchPanelCell srchPanel-delBtn">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$label audit_form_manual aDate}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+								<div class="rnr-searchtype">{$searchtype_aDate}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol_aDate}</div>
+								<div class="rnr-searchcontrol">{$searchcontrol1_aDate}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock_aDate}
+	</TBODY></table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Cari</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+{BEGIN filterPanel}<div  class="rnr-brickcontents  rnr-b-filterpanel {$brickclass_filterpanel}"><div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_aTypeCode}<div class="filter-field filter-aTypeCode-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label audit_form_manual aTypeCode}
+			{BEGIN clearLink_aTypeCode}<a href="#" class="filter-clear filter-clear-aTypeCode">Clear</a>
+			{END clearLink_aTypeCode}
+		</div>
+		{BEGIN filterCtrlBlock_aTypeCode}<div class="filter-values rnr-bg style1 {$collapsedClass_aTypeCode} {$visibilityClass_aTypeCode}">
+			{$aTypeCode_filter}	
+		</div>
+		{END filterCtrlBlock_aTypeCode}
+		
+				{BEGIN filter_button_showmore_aTypeCode}<div class="rnr-bg style1 filter-show-more {$collapsedClass_aTypeCode}">
+			<a class="filter-show-more-link filterShowMore_aTypeCode" href="#">Show {$numberOfItemsToSHow_aTypeCode} more</a>
+		</div>
+		{END filter_button_showmore_aTypeCode}
+		
+				
+			</div>
+{END filter_control_aTypeCode}
+</div></div>{END filterPanel}
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}<a href="audit_form_manual_add.php{$addlink_getparams}" class="rnr-button" {$addlink_attrs}>Tambah baru</a>
+	{END add_link}
+
+	
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">With selected...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+	
+		{BEGIN deleteselected_link}<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</a>
+</li>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export</a>
+</li>
+	{END exportselected_link}
+
+</ul>
+</span>
+{END widhtSelected}
+	</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">Lagi...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}<li>
+	<a href="audit_form_manual_search.php" class="rnr-button link" {$advsearchlink_attrs}>Carian maju</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}<li>
+	<a target="_blank" href="audit_form_manual_export.php" class="rnr-button link" {$exportlink_attrs}>Ekspot hasil</a>
+</li>
+{END export_link}
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Perincian dijumpai: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Halaman <b>{$page}</b> dari <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Rekod per halaman:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" style="width: 1742px;" cellpadding="0">
+  <thead>
+															{BEGIN grid_header}<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									<TD style="width: 85px;" rowspan="1" colspan="1"></TD>
+    <TH class="rnr-bc" style="width: 15px;" rowspan="1" colspan="1"></TH>
+    <TD style="width: 128px;" rowspan="1" colspan="1"></TD>
+    <TH class="rnr-gridfieldlabel {$ref_class}" style="width: 71px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$planID_class}" style="width: 77px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$aStatus_class}" style="width: 84px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$userID_class}" style="width: 78px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$userCheck_class}" style="width: 102px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$userAuditee_class}" style="width: 112px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$aDate_class}" style="width: 82px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$dueDate_class}" style="width: 109px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$dueDate2_class}" style="width: 104px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$dueDate3_class}" style="width: 104px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-gridfieldlabel {$replyPeriod_class}" style="width: 120px;" rowspan="1" colspan="3">
+      <P align="center"> Tempoh Maklum Balas </P></TH>
+    <TH class="rnr-gridfieldlabel {$opt_class}" style="width: 166px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-edge" style="width: 7px;" rowspan="1" colspan="1"></TH>
+    <TH class="rnr-cs" style="width: 3px;" rowspan="1" colspan="1"></TH></TR>
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}{BEGIN listIcons_column}<TH style="width: 85px;" rowspan="1" colspan="1" ieditcont="all"> 
+       &nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<TH class="rnr-bc" style="width: 15px;" rowspan="1" colspan="1"><input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		{BEGIN audit_form_manual_dtable_column}<th >&nbsp;</th>
+									{END audit_form_manual_dtable_column}
+																										{BEGIN ref_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ref_class}" style="width: 71px;" rowspan="1" colspan="1">{BEGIN ref_fieldheader}<span {$ref_orderlinkattrs}>
+											{$label audit_form_manual ref}
+										</span>
+									{END ref_fieldheader}
+									</th>
+									{END ref_fieldheadercolumn}
+
+																	{BEGIN planID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$planID_class}" style="width: 77px;" rowspan="1" colspan="1">{BEGIN planID_fieldheader}<span {$planID_orderlinkattrs}>
+											{$label audit_form_manual planID}
+										</span>
+									{END planID_fieldheader}
+									</th>
+									{END planID_fieldheadercolumn}
+
+																	{BEGIN aTypeCode_fieldheadercolumn}<th class="rnr-gridfieldlabel {$aTypeCode_class}">
+									{BEGIN aTypeCode_fieldheader}<span {$aTypeCode_orderlinkattrs}>
+											{$label audit_form_manual aTypeCode}
+										</span>
+									{END aTypeCode_fieldheader}
+									</th>
+									{END aTypeCode_fieldheadercolumn}
+
+																	{BEGIN aStatus_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$aStatus_class}" style="width: 84px;" rowspan="1" colspan="1">{BEGIN aStatus_fieldheader}<span {$aStatus_orderlinkattrs}>
+											{$label audit_form_manual aStatus}
+										</span>
+									{END aStatus_fieldheader}
+									</th>
+									{END aStatus_fieldheadercolumn}
+
+																	{BEGIN userID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$userID_class}" style="width: 78px;" rowspan="1" colspan="1">{BEGIN userID_fieldheader}<span {$userID_orderlinkattrs}>
+											{$label audit_form_manual userID}
+										</span>
+									{END userID_fieldheader}
+									</th>
+									{END userID_fieldheadercolumn}
+
+																	{BEGIN userCheck_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$userCheck_class}" style="width: 102px;" rowspan="1" colspan="1">{BEGIN userCheck_fieldheader}<span {$userCheck_orderlinkattrs}>
+											{$label audit_form_manual userCheck}
+										</span>
+									{END userCheck_fieldheader}
+									</th>
+									{END userCheck_fieldheadercolumn}
+
+																	{BEGIN userAuditee_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$userAuditee_class}" style="width: 112px;" rowspan="1" colspan="1">{BEGIN userAuditee_fieldheader}<span {$userAuditee_orderlinkattrs}>
+											{$label audit_form_manual userAuditee}
+										</span>
+									{END userAuditee_fieldheader}
+									</th>
+									{END userAuditee_fieldheadercolumn}
+
+																	{BEGIN aDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$aDate_class}" style="width: 82px;" rowspan="1" colspan="1">{BEGIN aDate_fieldheader}<span {$aDate_orderlinkattrs}>
+											{$label audit_form_manual aDate}
+										</span>
+									{END aDate_fieldheader}
+									</th>
+									{END aDate_fieldheadercolumn}
+
+																	{BEGIN dueDate_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$dueDate_class}" style="width: 109px;" rowspan="1" colspan="1">{BEGIN dueDate_fieldheader}<span {$dueDate_orderlinkattrs}>
+											{$label audit_form_manual dueDate}
+										</span>
+									{END dueDate_fieldheader}
+									</th>
+									{END dueDate_fieldheadercolumn}
+
+																	{BEGIN dueDate2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$dueDate2_class}" style="width: 104px;" rowspan="1" colspan="1">{BEGIN dueDate2_fieldheader}<span {$dueDate2_orderlinkattrs}>
+											{$label audit_form_manual dueDate2}
+										</span>
+									{END dueDate2_fieldheader}
+									</th>
+									{END dueDate2_fieldheadercolumn}
+
+																	{BEGIN dueDate3_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$dueDate3_class}" style="width: 104px;" rowspan="1" colspan="1">{BEGIN dueDate3_fieldheader}<span {$dueDate3_orderlinkattrs}>
+											{$label audit_form_manual dueDate3}
+										</span>
+									{END dueDate3_fieldheader}
+									</th>
+									{END dueDate3_fieldheadercolumn}
+
+																	{BEGIN replyPeriod_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$replyPeriod_class}" style="width: 40px;" rowspan="1" colspan="1">{BEGIN replyPeriod_fieldheader}<span {$replyPeriod_orderlinkattrs}>
+											{$label audit_form_manual replyPeriod}
+										</span>
+									{END replyPeriod_fieldheader}
+									</th>
+									{END replyPeriod_fieldheadercolumn}
+
+																	{BEGIN replyPeriod2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$replyPeriod2_class}" style="width: 40px;" rowspan="1" colspan="1">{BEGIN replyPeriod2_fieldheader}<span {$replyPeriod2_orderlinkattrs}>
+											{$label audit_form_manual replyPeriod2}
+										</span>
+									{END replyPeriod2_fieldheader}
+									</th>
+									{END replyPeriod2_fieldheadercolumn}
+
+																	{BEGIN replyPeriod3_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$replyPeriod3_class}" style="width: 40px;" rowspan="1" colspan="1">{BEGIN replyPeriod3_fieldheader}<span {$replyPeriod3_orderlinkattrs}>
+											{$label audit_form_manual replyPeriod3}
+										</span>
+									{END replyPeriod3_fieldheader}
+									</th>
+									{END replyPeriod3_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}<TH class="rnr-cs" style="width: 3px;" rowspan="1" colspan="1"> 
+       &nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}{BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" style="width: 83px;" rowspan="1" colspan="1" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Sunting"></a>
+									{END edit_link}
+									{END edit_column}
+
+									
+									
+																		{BEGIN view_column}{BEGIN view_link}<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="Lihat"></a>
+									{END view_link}
+									{END view_column}
+									<A class="rnr-button button" id="New_Button" href="#" typeid="ib">B</A> 
+    </td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<TD class="rnr-bc" style="width: 13px;" rowspan="1" colspan="1" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+																		{BEGIN audit_form_manual_dtable_column}<td class="rnr-nowrap" {$rowstyle} {$recordattrs}>
+
+																		{BEGIN audit_info_dtable_link}<span>
+									<a {$audit_info_dtablelink_attrs}>
+										PENEMUAN
+																				<span {$audit_info_childnumber_attr} dir="ltr">{BEGIN audit_info_childcount}({$audit_info_childnumber}){END audit_info_childcount}</span>
+									</a>
+																		&nbsp;
+									</span>
+									{END audit_info_dtable_link}
+									
+									</td>
+									{END audit_form_manual_dtable_column}
+
+										{BEGIN ref_fieldcolumn}<TD class="{$ref_class}" style="width: 69px;" rowspan="1" colspan="1" {$ref_style} {$recordattrs}>
+      {$ref_value}
+	</td>
+{END ref_fieldcolumn}
+
+	{BEGIN planID_fieldcolumn}<TD class="{$planID_class}" style="width: 75px;" rowspan="1" colspan="1" {$planID_style} {$recordattrs}>
+      {$planID_value}
+	</td>
+{END planID_fieldcolumn}
+
+	{BEGIN aTypeCode_fieldcolumn}<td class="{$aTypeCode_class}" {$aTypeCode_style} {$recordattrs}>
+		{$aTypeCode_value}
+	</td>
+{END aTypeCode_fieldcolumn}
+
+	{BEGIN aStatus_fieldcolumn}<TD class="{$aStatus_class}" style="width: 82px;" rowspan="1" colspan="1" {$aStatus_style} {$recordattrs}>
+      {$aStatus_value}
+	</td>
+{END aStatus_fieldcolumn}
+
+	{BEGIN userID_fieldcolumn}<TD class="{$userID_class}" style="width: 76px;" rowspan="1" colspan="1" {$userID_style} {$recordattrs}>
+      {$userID_value}
+	</td>
+{END userID_fieldcolumn}
+
+	{BEGIN userCheck_fieldcolumn}<TD class="{$userCheck_class}" style="width: 100px;" rowspan="1" colspan="1" {$userCheck_style} {$recordattrs}>
+      {$userCheck_value}
+	</td>
+{END userCheck_fieldcolumn}
+
+	{BEGIN userAuditee_fieldcolumn}<TD class="{$userAuditee_class}" style="width: 110px;" rowspan="1" colspan="1" {$userAuditee_style} {$recordattrs}>{$userAuditee_value}
+	</td>
+{END userAuditee_fieldcolumn}
+
+	{BEGIN aDate_fieldcolumn}<TD class="{$aDate_class}" style="width: 80px;" rowspan="1" colspan="1" {$aDate_style} {$recordattrs}>
+      {$aDate_value}
+	</td>
+{END aDate_fieldcolumn}
+
+	{BEGIN dueDate_fieldcolumn}<TD class="{$dueDate_class}" style="width: 107px;" rowspan="1" colspan="1" {$dueDate_style} {$recordattrs}>
+      {$dueDate_value}
+	</td>
+{END dueDate_fieldcolumn}
+
+	{BEGIN dueDate2_fieldcolumn}<TD class="{$dueDate2_class}" style="width: 102px;" rowspan="1" colspan="1" {$dueDate2_style} {$recordattrs}>
+      {$dueDate2_value}
+	</td>
+{END dueDate2_fieldcolumn}
+
+	{BEGIN dueDate3_fieldcolumn}<TD class="{$dueDate3_class}" style="width: 102px;" rowspan="1" colspan="1" {$dueDate3_style} {$recordattrs}>
+      {$dueDate3_value}
+	</td>
+{END dueDate3_fieldcolumn}
+
+	{BEGIN replyPeriod_fieldcolumn}<TD class="{$replyPeriod_class}" style="width: 35px;" rowspan="1" colspan="1" {$replyPeriod_style} {$recordattrs}>{$replyPeriod_value}
+	</td>
+{END replyPeriod_fieldcolumn}
+
+	{BEGIN replyPeriod2_fieldcolumn}<TD class="{$replyPeriod2_class}" style="width: 56px;" rowspan="1" colspan="1" {$replyPeriod2_style} {$recordattrs}>
+      {$replyPeriod2_value}
+	</td>
+{END replyPeriod2_fieldcolumn}
+
+	{BEGIN replyPeriod3_fieldcolumn}<TD class="{$replyPeriod3_class}" style="width: 64px;" rowspan="1" colspan="1" {$replyPeriod3_style} {$recordattrs}>
+      {$replyPeriod3_value}
+	</td>
+{END replyPeriod3_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}<TD class="rnr-cs" style="width: 3px;" rowspan="1" colspan="1" {$endrecordblock_attrs}> &nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Perincian dijumpai: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Halaman <b>{$page}</b> dari <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Rekod per halaman:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

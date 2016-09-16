@@ -1,0 +1,1308 @@
+.Office1Avenue1.rnr-s-empty > .rnr-c
+{
+background:none;
+
+}
+.Office1Avenue1.rnr-s-empty > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.Office1Avenue1.rnr-s-empty > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style1
+{
+color: #333333;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-empty > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-empty > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style2
+{
+color: #333333;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style3
+{
+color: #333333;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-empty > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #438EB5;color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-menu > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #438EB5;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style2
+{
+background-color: #4583C0;
+background: linear-gradient(0.750000turn, #376899, #4583C0, #376899);
+;
+color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style3
+{
+background-color: #D2D8DC;
+background: linear-gradient(0.750000turn, #A8ACB0, #D2D8DC, #A8ACB0);
+;
+color: #333333;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-menu > .rnr-c .rnr-leftbricks
+{
+margin-left: 0px;
+}
+.Office1Avenue1.rnr-s-menu > .rnr-c .rnr-rightbricks
+{
+margin-right: 0px;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-menu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 0px; background:transparent;
+}
+.Office1Avenue1.rnr-s-menu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 0px; background:transparent;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-menu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-hmenu > .rnr-c
+{
+background:none;
+
+}
+.Office1Avenue1.rnr-s-hmenu > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.Office1Avenue1.rnr-s-hmenu > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style1
+{
+color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 6px 4px;
+}
+.Office1Avenue1.rnr-s-hmenu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-hmenu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style2
+{
+color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style3
+{
+color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-hmenu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #CCCCCC, #FFFFFF, #CCCCCC);
+;
+color: #404040;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-undermenu > .rnr-c.rnr-ch
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #CCCCCC, #FFFFFF, #CCCCCC);
+;
+
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #FFFF00;color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #FFFF00;color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-undermenu > .rnr-c .rnr-leftbricks
+{
+margin-left: 0px;
+}
+.Office1Avenue1.rnr-s-undermenu > .rnr-c .rnr-rightbricks
+{
+margin-right: 0px;
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-undermenu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 0px; background:transparent;
+}
+.Office1Avenue1.rnr-s-undermenu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 0px; background:transparent;
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-undermenu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-c
+{
+border-top-left-radius: 3px;border-top-right-radius: 3px;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 3px; padding-left: 1px;
+border-bottom-left-radius: 3px; padding-left: 1px;
+
+}
+.Office1Avenue1.rnr-s-fields > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 3px; padding-right: 1px;
+border-bottom-right-radius: 3px; padding-right: 1px;
+
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color: #333381;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-c.rnr-ch
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style2
+{
+background-color: #34699E;
+background: linear-gradient(0.000000turn, #306294, #34699E, #306294);
+;
+color: #FFFFFF;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #FFFFFF;color: #696969;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-c .rnr-leftbricks
+{
+margin-left: 3px;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-c .rnr-rightbricks
+{
+margin-right: 3px;
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 7px 6px;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 3px; background:transparent;
+}
+.Office1Avenue1.rnr-s-fields > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 3px; background:transparent;
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 8px 10px;
+}
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-fields > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 8px 4px;
+}
+.Office1Avenue1.rnr-s-form > .rnr-c
+{
+border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+}
+.Office1Avenue1.rnr-s-form > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 10px; padding-left: 5px;
+border-bottom-left-radius: 10px; padding-left: 5px;
+
+}
+.Office1Avenue1.rnr-s-form > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 10px; padding-right: 5px;
+border-bottom-right-radius: 10px; padding-right: 5px;
+
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #00CCCC;color: #000080;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-form > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #00CCCC;
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #004080;color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #6699CC;color: #003366;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-form > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.Office1Avenue1.rnr-s-form > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-form > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-form > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-form > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-form > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-c
+{
+border: solid #DCDCDC 1px;border-top-left-radius: 4px;border-top-right-radius: 4px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 3px; padding-left: 2px;
+border-bottom-left-radius: 3px; padding-left: 2px;
+
+}
+.Office1Avenue1.rnr-s-1 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 3px; padding-right: 2px;
+border-bottom-right-radius: 3px; padding-right: 2px;
+
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #34699E;
+background: linear-gradient(0.750000turn, #29547E, #34699E, #29547E);
+;
+color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-c.rnr-ch
+{
+background-color: #34699E;
+background: linear-gradient(0.750000turn, #29547E, #34699E, #29547E);
+;
+
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style2
+{
+background-color: #34699E;
+background: linear-gradient(0.000000turn, #306294, #34699E, #306294);
+;
+color: #FFFFFF;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #34699E;color: #D1EEEE;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-c .rnr-leftbricks
+{
+margin-left: 4px;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-c .rnr-rightbricks
+{
+margin-right: 4px;
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 4px; background:transparent;
+}
+.Office1Avenue1.rnr-s-1 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 4px; background:transparent;
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 8px 10px;
+}
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-1 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 10px;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-c
+{
+border-top-left-radius: 2px;border-top-right-radius: 2px;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 2px; padding-left: 1px;
+border-bottom-left-radius: 2px; padding-left: 1px;
+
+}
+.Office1Avenue1.rnr-s-2 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 2px; padding-right: 1px;
+border-bottom-right-radius: 2px; padding-right: 1px;
+
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #EDF1F3;
+background: linear-gradient(0.000000turn, #F9FAFB, #EDF1F3);
+;
+color: #333333;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-c.rnr-ch
+{
+background-color: #EDF1F3;
+background: linear-gradient(0.000000turn, #F9FAFB, #EDF1F3);
+;
+
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #3366FF;color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #6699CC;color: #FFFF00;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-c .rnr-leftbricks
+{
+margin-left: 2px;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-c .rnr-rightbricks
+{
+margin-right: 2px;
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 7px 4px;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 2px; background:transparent;
+}
+.Office1Avenue1.rnr-s-2 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 2px; background:transparent;
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-2 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-c
+{
+border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 10px; padding-left: 5px;
+border-bottom-left-radius: 10px; padding-left: 5px;
+
+}
+.Office1Avenue1.rnr-s-3 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 10px; padding-right: 5px;
+border-bottom-right-radius: 10px; padding-right: 5px;
+
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style1,
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-c.rnr-ch
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style2,
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #000080;color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style3,
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #004080;color: #FFFFFF;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style1,
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-3 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style2,
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.Office1Avenue1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style3,
+.Office1Avenue1.rnr-s-3 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow > th:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow > th:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow > td:not(.rnr-cs)
+{
+background-color: #3D78B4; background-image: none;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;color: #FFFFFF;padding: 5px 6px;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-bottomrow > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-bottomrow > td:not(.rnr-cs)
+{
+background-color: #DCE2E6; background-image: none;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;color: #333333;padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row > td:not(.rnr-cs)
+{
+background-color: #EDF1F3; background-image: none;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;color: #333333;color: #333333;padding: 5px 4px;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row:nth-last-child(2n+1) > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row:nth-last-child(2n+1) > td:not(.rnr-cs)
+{
+background-color: #FFFFFF; background-image: none;color: #333333;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical).hoverable > * > .rnr-row:hover > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord.hoverable > * > .rnr-row:hover > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row > td.rnr-selected,
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row > td.rnr-selected
+{
+background-color: #DCDCDC; background-image: none;color: #333333;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical).hoverable > * > .rnr-row:hover:nth-last-child(2n+1) > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord.hoverable > * > .rnr-row:hover:nth-last-child(2n+1) > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row:nth-last-child(2n+1) > td.rnr-selected,
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row:nth-last-child(2n+1) > td.rnr-selected
+{
+background-color: #C0C0C0; background-image: none;color: #333333;
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > thead > tr:last-child > th:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > thead > tr:last-child > th:not(.rnr-cs)
+{
+border-bottom: solid #D8DCDE 1px;
+
+}
+.Office1Avenue1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:not(.rnr-bottomrow) + .rnr-bottomrow > td:not(.rnr-cs),
+.Office1Avenue1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:not(.rnr-bottomrow) + .rnr-bottomrow > td:not(.rnr-cs)
+{
+border-top: solid #D8DCDE 1px;
+
+}
+.Office1Avenue1 .rnr-search-highlight
+{
+color: #FF0000; background-color: transparent;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > *,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem)
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.750000turn, #CCCCCC, #FFFFFF, #CCCCCC);
+;
+color:#696969;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > hr,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem) > hr
+{
+border-color:#696969;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > *:hover:not(.expanded):not(.menuSeparator),
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem):not(.manage):hover:not(.menuSeparator)
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > *.current.current.current,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem).current.current.current
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > *:hover:hover:hover.expanded
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.750000turn, #54A2CB, #4B9EC9, #54A2CB);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li > hr,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem > hr
+{
+border-color:#FFFFFF;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li:hover:not(.expanded):not(.menuSeparator),
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem:hover:not(.menuSeparator)
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li.current.current.current,
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem.current.current.current
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li:hover:hover:hover.expanded
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem) > div
+{
+padding: 8px 4px; margin:1px 2px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > :not(ul) > *
+{
+padding: 8px 4px; margin:1px 2px;
+}
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem > div
+{
+padding: 7px 7px; margin:1px 3px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > * > ul li > :not(ul) > *
+{
+padding: 7px 7px; margin:1px 3px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main >  * ul > li:not(:first-child)
+{
+border-top: solid #95B8DB 1px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.main > *:not(:first-child),
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *:not(.subitem):not(:first-child)
+{
+border-top:solid #C2DEED 1px;
+}
+.Office1Avenue1 .rnr-b-vmenu.tree.main > *.subitem:not(:first-child)
+{
+border-top: solid #95B8DB 1px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > *,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *:not(.subitem)
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color:#696969;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > hr,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *:not(.subitem) > hr
+{
+border-color:#696969;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > *:hover:not(.expanded):not(.menuSeparator),
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *:not(.subitem):not(.manage):hover:not(.menuSeparator)
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #B7D8E9, #4B9EC9);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > *.current.current.current,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *:not(.subitem).current.current.current
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #B7D8E9, #4B9EC9);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > *:hover:hover:hover.expanded
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #B7D8E9, #4B9EC9);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *.subitem
+{
+background-image:none; background-color: #4B9EC9;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li > hr,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *.subitem > hr
+{
+border-color:#FFFFFF;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li:hover:not(.expanded):not(.menuSeparator),
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *.subitem:hover:not(.menuSeparator)
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li.current.current.current,
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *.subitem.current.current.current
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li:hover:hover:hover.expanded
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *:not(.subitem) > div
+{
+padding: 8px 4px; margin:1px 2px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > :not(ul) > *
+{
+padding: 8px 4px; margin:1px 2px;
+}
+.Office1Avenue1 .rnr-b-vmenu.tree.second > *.subitem > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second > * > ul li > :not(ul) > *
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.Office1Avenue1 .rnr-b-vmenu.simple.second >  * ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.Office1Avenue1 .rnr-b-hmenu.main > div:not(.rnr-hseparator)
+{
+background: transparent;color:#696969;font-family: Tahoma, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: none;padding: 19px 20px;border: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #CCCCCC, #FFFFFF, #CCCCCC);
+;
+
+}
+.Office1Avenue1 .rnr-b-hmenu.main > div:not(.rnr-hseparator) > hr
+{
+border-color:#696969;
+}
+.Office1Avenue1 .rnr-b-hmenu.main:hover:not(.expanded) > div:not(.rnr-hseparator)
+{
+background: transparent;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main:hover:not(.expanded)
+{
+background-color: #CC3399;
+background: linear-gradient(0.000000turn, #A3287A, #CC3399, #A3287A);
+;
+
+}
+.Office1Avenue1 .rnr-b-hmenu.main.current.current > div:not(.rnr-hseparator)
+{
+background: transparent;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main.current.current
+{
+background-color: #800080;
+background: linear-gradient(0.000000turn, #660066, #800080, #660066);
+;
+
+}
+.Office1Avenue1 .rnr-b-hmenu.main:hover.expanded > div:not(.rnr-hseparator)
+{
+background: transparent;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main:hover.expanded
+{
+background-color: #800080;
+background: linear-gradient(0.000000turn, #660066, #800080, #660066);
+;
+
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li
+{
+background-image:none; background-color: #CC3399;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li > hr
+{
+border-color:#FFFFFF;
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li:hover:not(.expanded):not(.menuSeparator)
+{
+background-image:none; background-color: #4B87C2;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li.current.current
+{
+background-image:none; background-color: #800080;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li:hover.expanded
+{
+background-image:none; background-color: #CC3399;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.main > ul li > div > div
+{
+padding: 9px 14px; margin:1px 6px;
+}
+.Office1Avenue1 .rnr-b-hmenu.main:not(:last-child)
+{
+border-right: solid #FFFFFF 1px;
+}
+.Office1Avenue1 :not(.rnr-b-hmenu):not(.main) + .rnr-b-hmenu.main
+{
+border-left: solid #FFFFFF 1px;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > div:not(.rnr-hseparator)
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #CCCCCC, #FFFFFF, #CCCCCC);
+;
+color:#696969;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;padding: 5px 4px;border-top-right-radius: 8px;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > div:not(.rnr-hseparator) > hr
+{
+border-color:#696969;
+}
+.Office1Avenue1 .rnr-b-hmenu.second:hover:not(.expanded) > div:not(.rnr-hseparator)
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second.current.current > div:not(.rnr-hseparator)
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second:hover.expanded > div:not(.rnr-hseparator)
+{
+background-color: #4B9EC9;
+background: linear-gradient(0.000000turn, #3C7EA0, #4B9EC9, #3C7EA0);
+;
+color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li
+{
+background-image:none; background-color: #4B9EC9;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li > hr
+{
+border-color:#FFFFFF;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li:hover:not(.expanded):not(.menuSeparator)
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li.current.current
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li:hover.expanded
+{
+background-image:none; background-color: #438EB5;color:#FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.Office1Avenue1 .rnr-b-hmenu.second > ul li > div > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.Office1Avenue1 .rnr-b-hmenu.second ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.Office1Avenue1 .rnr-b-hmenu.second.rnr-b-hmenu.rnr-b-hmenu
+{
+padding-bottom: 0; padding-left:0; padding-right:0; vertical-align: bottom;
+}
+body.Office1Avenue1
+{
+
+background-color:#D7DBDF;
+}
+.Office1Avenue1 .rnr-list
+{
+color: #000000;background-color: #FFFFFF;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;border: solid #A9A9A9 1px;box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.Office1Avenue1 .rnr-tab.selected
+{
+background-color:#4B9EC9;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+
+}
+.Office1Avenue1 .rnr-tab
+{
+background-color:#C0C0C0;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+border: solid #4B9EC9 1px; border-bottom-width:0;
+}
+.Office1Avenue1 .rnr-tab.selected > a
+{
+color: #FFFFFF;
+
+}
+.Office1Avenue1 .rnr-tab > a
+{
+color: #000000;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .yui-navset .yui-content
+{
+border: solid #4B9EC9 1px;border-top-width: 5px;
+}
+.Office1Avenue1 .rnr-stepnav > a.active,
+.Office1Avenue1 .rnr-stepnav > a:hover:not(.active)
+{
+background-color: #DFE2E4;
+background: linear-gradient(0.000000turn, #F6F6F7, #DFE2E4);
+;
+color: #333333;
+
+}
+.Office1Avenue1 .rnr-stepnav > a.active:after,
+.Office1Avenue1 .rnr-stepnav > a:hover:not(.active):after
+{
+background-color: #DFE2E4;
+background: linear-gradient(0.875000turn, #F6F6F7, #DFE2E4);
+;
+
+}
+.Office1Avenue1 .rnr-stepnav > a:not(.active),
+.Office1Avenue1 .rnr-stepnav > a:not(.active):after
+{
+background-image: none; background-color: #C0C0C0;
+
+}
+.Office1Avenue1 .rnr-stepnav > a:before
+{
+background-image: none; background: #FFFFFF;
+
+}
+.Office1Avenue1 .rnr-stepnav > a:not(.active)
+{
+color: #A9A9A9;
+
+}
+.Office1Avenue1 .rnr-stepnav > a:before 
+{
+color: #000000;
+
+}
+.Office1Avenue1 .rnr-stepnav > a,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-stepnav > a,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-stepnav > a
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1  .rnr-message
+{
+background-color: #FFFFFF;border: solid #DCDCDC 2px;color: #16589C;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1  .rnr-error.rnr-error
+{
+color: #A80000;font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .yui3-panel-content.yui3-panel-content
+{
+border: solid #DCDCDC 1px;border-radius: 4px;
+}
+.Office1Avenue1  .yui3-panel .yui3-widget-hd.yui3-widget-hd.yui3-widget-hd
+{
+background-color: #34699E;
+background: linear-gradient(0.000000turn, #306294, #34699E, #306294);
+;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #FFFFFF;
+}
+.Office1Avenue1  .yui3-widget-ft
+{
+background-color: #34699E;
+background: linear-gradient(0.000000turn, #306294, #34699E, #306294);
+;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #FFFFFF;
+}
+.Office1Avenue1 .rnr-dbbordered
+{
+border: solid #DCDCDC 1px;border-radius: 4px;
+}
+.Office1Avenue1  .rnr-dbelemheader
+{
+background-color: #34699E;
+background: linear-gradient(0.000000turn, #306294, #34699E, #306294);
+;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #FFFFFF;
+}
+.Office1Avenue1  .rnr-dbelemfooter
+{
+background-color: #D8D8D8;
+background: linear-gradient(0.000000turn, #CBCBCB, #D8D8D8, #CBCBCB);
+;
+font-family: Avant Garde, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #000000;
+}
+.Office1Avenue1  .rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow
+{
+background-color: #FFFACD; background-image: none;color: #4C4951;
+}
+.Office1Avenue1 .rnr-dashboard
+{
+background-color: #FFFFFF;
+}
+.Office1Avenue1 .rnr-button.rnr-button,
+.Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+.Office1Avenue1 .button.button.button.rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.rnr-button
+{
+border: solid 1px;border-radius: 2px;padding: 3px 10px 3px;background-color: #DFE2E4;
+background: linear-gradient(0.000000turn, #F6F6F7, #DFE2E4);
+;
+border-color: #000000;color: #333333;
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .rnr-button.rnr-button.img,
+.Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+.Office1Avenue1 .button.button.button.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.rnr-button.img
+{
+padding: 3px;
+
+}
+.Office1Avenue1 .rnr-button:hover,
+.Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+.Office1Avenue1 .button.button.button.rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button:hover
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #000000;color: #000000;
+
+}
+.Office1Avenue1 .rnr-button:active,
+.Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+.Office1Avenue1 .button.button.button.rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button:active
+{
+background-color: #DFE2E4;
+background: linear-gradient(0.000000turn, #F6F6F7, #DFE2E4);
+;
+border-color: #000000;color: #000000;
+
+}
+.Office1Avenue1 .rnr-button.disabled,
+.Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+.Office1Avenue1 .button.button.button.rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1 .rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .button.button.button.rnr-button.disabled
+{
+background-color: #C0C0C0;
+background: linear-gradient(0.000000turn, #EDEDED, #C0C0C0);
+;
+border-color: #000000;color: #A9A9A9;
+
+}
+.Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+.Office1Avenue1 .link.link.link.rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.rnr-button
+{
+background: none; border: none; ;
+border: none;border-radius: 0px;padding: 4px 8px 4px;color: #004080;
+font-family: Tahoma, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+.Office1Avenue1 .link.link.link.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.rnr-button.img
+{
+padding: 4px;
+
+}
+.Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+.Office1Avenue1 .link.link.link.rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button:hover
+{
+color: #FE4F29;
+
+}
+.Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+.Office1Avenue1 .link.link.link.rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button:active
+{
+color: #004080;
+
+}
+.Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+.Office1Avenue1 .link.link.link.rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .link.link.link.rnr-button.disabled
+{
+color: #004080;
+
+}
+.Office1Avenue1 .main.main.main.rnr-button.rnr-button,
+ .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.rnr-button
+{
+border: solid 1px;border-radius: 2px;padding: 3px 12px 4px;background-image: none; background-color: #DFE2E4;
+border-color: #000000;color: #333333;
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.Office1Avenue1 .main.main.main.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.rnr-button.img
+{
+padding: 3px;
+
+}
+.Office1Avenue1 .main.main.main.rnr-button:hover,
+ .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button:hover
+{
+background-image: none; background-color: #FFFFFF;
+border-color: #000000;color: #000000;
+
+}
+.Office1Avenue1 .main.main.main.rnr-button:active,
+ .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button:active
+{
+background-image: none; background-color: #DFE2E4;
+border-color: #000000;color: #000000;
+
+}
+.Office1Avenue1 .main.main.main.rnr-button.disabled,
+ .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .Office1Avenue1 .main.main.main.rnr-button.disabled
+{
+background-image: none; background-color: #C0C0C0;
+border-color: #000000;color: #A9A9A9;
+
+}
+
+
+ body.function-list,  body.function-menu, body.function-login {
+height:100%;
+background:transparent url("http://kreatiwi.com/eexam/images/background.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+
+ .rnr-left, .rnr-center  {
+
+ }
+ 

@@ -1,0 +1,152 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel web_news add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields_atop {$brickclass_addfields_atop}"><div class="rnr-simplefields edit">
+	{BEGIN wTitle_fieldblock}
+<div data-fieldname="wTitle" class="rnr-field style1 {$fielddispclass_wTitle}">
+  <div class="rnr-label above">{BEGIN wTitle_label}{$label web_news wTitle}{END wTitle_label}</div>
+  <div class="rnr-control style3">{$wTitle_editcontrol}</div>
+</div>
+{END wTitle_fieldblock}
+	{BEGIN wStatus_fieldblock}
+<div data-fieldname="wStatus" class="rnr-field style1 {$fielddispclass_wStatus}">
+  <div class="rnr-label above">{BEGIN wStatus_label}{$label web_news wStatus}{END wStatus_label}</div>
+  <div class="rnr-control style3">{$wStatus_editcontrol}</div>
+</div>
+{END wStatus_fieldblock}
+	{BEGIN wDate_fieldblock}
+<div data-fieldname="wDate" class="rnr-field style1 {$fielddispclass_wDate}">
+  <div class="rnr-label above">{BEGIN wDate_label}{$label web_news wDate}{END wDate_label}</div>
+  <div class="rnr-control style3">{$wDate_editcontrol}</div>
+</div>
+{END wDate_fieldblock}
+	{BEGIN wType_fieldblock}
+<div data-fieldname="wType" class="rnr-field style1 {$fielddispclass_wType}">
+  <div class="rnr-label above">{BEGIN wType_label}{$label web_news wType}{END wType_label}</div>
+  <div class="rnr-control style3">{$wType_editcontrol}</div>
+</div>
+{END wType_fieldblock}
+	{BEGIN wContent_fieldblock}
+<div data-fieldname="wContent" class="rnr-field style1 {$fielddispclass_wContent}">
+  <div class="rnr-label above">{BEGIN wContent_label}{$label web_news wContent}{END wContent_label}</div>
+  <div class="rnr-control style3">{$wContent_editcontrol}</div>
+</div>
+{END wContent_fieldblock}
+	{BEGIN wPic_fieldblock}
+<div data-fieldname="wPic" class="rnr-field style1 {$fielddispclass_wPic}">
+  <div class="rnr-label above">{BEGIN wPic_label}{$label web_news wPic}{END wPic_label}</div>
+  <div class="rnr-control style3">{$wPic_editcontrol}</div>
+</div>
+{END wPic_fieldblock}
+</div>
+</div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Simpan</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Set semula</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Batal</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Kembali ke senarai</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Kembali ke menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

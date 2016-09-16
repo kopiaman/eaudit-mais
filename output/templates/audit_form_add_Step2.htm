@@ -1,0 +1,55 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN dueDate_tabfieldblock}
+<tr class="{$fielddispclass_dueDate}" data-fieldname="dueDate">
+	<td class="style1 rnr-label">
+		{BEGIN dueDate_label}{$label audit_form dueDate}{END dueDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dueDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dueDate_tabfieldblock}
+{BEGIN replyDate_tabfieldblock}
+<tr class="{$fielddispclass_replyDate}" data-fieldname="replyDate">
+	<td class="style1 rnr-label">
+		{BEGIN replyDate_label}{$label audit_form replyDate}{END replyDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$replyDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END replyDate_tabfieldblock}
+{BEGIN repeatStatus_tabfieldblock}
+<tr class="{$fielddispclass_repeatStatus}" data-fieldname="repeatStatus">
+	<td class="style1 rnr-label">
+		{BEGIN repeatStatus_label}{$label audit_form repeatStatus}{END repeatStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$repeatStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END repeatStatus_tabfieldblock}
+{BEGIN repeatNo_tabfieldblock}
+<tr class="{$fielddispclass_repeatNo}" data-fieldname="repeatNo">
+	<td class="style1 rnr-label">
+		{BEGIN repeatNo_label}{$label audit_form repeatNo}{END repeatNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$repeatNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END repeatNo_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

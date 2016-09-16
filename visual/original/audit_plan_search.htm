@@ -1,0 +1,445 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel audit_plan search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Semua syarat-syarat</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Mana-mana syarat</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_aTypeCode}">
+	{BEGIN aTypeCode_fieldblock}		
+	<td>
+		{$label audit_plan aTypeCode}
+	</td>
+	<td>
+		<input type="checkbox" {$aTypeCode_notbox}>
+	</td>
+	<td>
+		{$searchtype_aTypeCode}
+	</td>
+	<td>
+		{$aTypeCode_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$aTypeCode_editcontrol1}&nbsp;
+	</td>
+{END aTypeCode_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_subTypeID}">
+	{BEGIN subTypeID_fieldblock}		
+	<td>
+		{$label audit_plan subTypeID}
+	</td>
+	<td>
+		<input type="checkbox" {$subTypeID_notbox}>
+	</td>
+	<td>
+		{$searchtype_subTypeID}
+	</td>
+	<td>
+		{$subTypeID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$subTypeID_editcontrol1}&nbsp;
+	</td>
+{END subTypeID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_aTitle}">
+	{BEGIN aTitle_fieldblock}		
+	<td>
+		{$label audit_plan aTitle}
+	</td>
+	<td>
+		<input type="checkbox" {$aTitle_notbox}>
+	</td>
+	<td>
+		{$searchtype_aTitle}
+	</td>
+	<td>
+		{$aTitle_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$aTitle_editcontrol1}&nbsp;
+	</td>
+{END aTitle_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_organization}">
+	{BEGIN organization_fieldblock}		
+	<td>
+		{$label audit_plan organization}
+	</td>
+	<td>
+		<input type="checkbox" {$organization_notbox}>
+	</td>
+	<td>
+		{$searchtype_organization}
+	</td>
+	<td>
+		{$organization_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$organization_editcontrol1}&nbsp;
+	</td>
+{END organization_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_aYear}">
+	{BEGIN aYear_fieldblock}		
+	<td>
+		{$label audit_plan aYear}
+	</td>
+	<td>
+		<input type="checkbox" {$aYear_notbox}>
+	</td>
+	<td>
+		{$searchtype_aYear}
+	</td>
+	<td>
+		{$aYear_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$aYear_editcontrol1}&nbsp;
+	</td>
+{END aYear_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_meeting}">
+	{BEGIN meeting_fieldblock}		
+	<td>
+		{$label audit_plan meeting}
+	</td>
+	<td>
+		<input type="checkbox" {$meeting_notbox}>
+	</td>
+	<td>
+		{$searchtype_meeting}
+	</td>
+	<td>
+		{$meeting_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$meeting_editcontrol1}&nbsp;
+	</td>
+{END meeting_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_jan}">
+	{BEGIN jan_fieldblock}		
+	<td>
+		{$label audit_plan jan}
+	</td>
+	<td>
+		<input type="checkbox" {$jan_notbox}>
+	</td>
+	<td>
+		{$searchtype_jan}
+	</td>
+	<td>
+		{$jan_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$jan_editcontrol1}&nbsp;
+	</td>
+{END jan_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_feb}">
+	{BEGIN feb_fieldblock}		
+	<td>
+		{$label audit_plan feb}
+	</td>
+	<td>
+		<input type="checkbox" {$feb_notbox}>
+	</td>
+	<td>
+		{$searchtype_feb}
+	</td>
+	<td>
+		{$feb_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$feb_editcontrol1}&nbsp;
+	</td>
+{END feb_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_mac}">
+	{BEGIN mac_fieldblock}		
+	<td>
+		{$label audit_plan mac}
+	</td>
+	<td>
+		<input type="checkbox" {$mac_notbox}>
+	</td>
+	<td>
+		{$searchtype_mac}
+	</td>
+	<td>
+		{$mac_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$mac_editcontrol1}&nbsp;
+	</td>
+{END mac_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_apr}">
+	{BEGIN apr_fieldblock}		
+	<td>
+		{$label audit_plan apr}
+	</td>
+	<td>
+		<input type="checkbox" {$apr_notbox}>
+	</td>
+	<td>
+		{$searchtype_apr}
+	</td>
+	<td>
+		{$apr_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$apr_editcontrol1}&nbsp;
+	</td>
+{END apr_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_may}">
+	{BEGIN may_fieldblock}		
+	<td>
+		{$label audit_plan may}
+	</td>
+	<td>
+		<input type="checkbox" {$may_notbox}>
+	</td>
+	<td>
+		{$searchtype_may}
+	</td>
+	<td>
+		{$may_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$may_editcontrol1}&nbsp;
+	</td>
+{END may_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_jun}">
+	{BEGIN jun_fieldblock}		
+	<td>
+		{$label audit_plan jun}
+	</td>
+	<td>
+		<input type="checkbox" {$jun_notbox}>
+	</td>
+	<td>
+		{$searchtype_jun}
+	</td>
+	<td>
+		{$jun_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$jun_editcontrol1}&nbsp;
+	</td>
+{END jun_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_jul}">
+	{BEGIN jul_fieldblock}		
+	<td>
+		{$label audit_plan jul}
+	</td>
+	<td>
+		<input type="checkbox" {$jul_notbox}>
+	</td>
+	<td>
+		{$searchtype_jul}
+	</td>
+	<td>
+		{$jul_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$jul_editcontrol1}&nbsp;
+	</td>
+{END jul_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_aug}">
+	{BEGIN aug_fieldblock}		
+	<td>
+		{$label audit_plan aug}
+	</td>
+	<td>
+		<input type="checkbox" {$aug_notbox}>
+	</td>
+	<td>
+		{$searchtype_aug}
+	</td>
+	<td>
+		{$aug_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$aug_editcontrol1}&nbsp;
+	</td>
+{END aug_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sep}">
+	{BEGIN sep_fieldblock}		
+	<td>
+		{$label audit_plan sep}
+	</td>
+	<td>
+		<input type="checkbox" {$sep_notbox}>
+	</td>
+	<td>
+		{$searchtype_sep}
+	</td>
+	<td>
+		{$sep_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sep_editcontrol1}&nbsp;
+	</td>
+{END sep_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_oct}">
+	{BEGIN oct_fieldblock}		
+	<td>
+		{$label audit_plan oct}
+	</td>
+	<td>
+		<input type="checkbox" {$oct_notbox}>
+	</td>
+	<td>
+		{$searchtype_oct}
+	</td>
+	<td>
+		{$oct_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$oct_editcontrol1}&nbsp;
+	</td>
+{END oct_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nov}">
+	{BEGIN nov_fieldblock}		
+	<td>
+		{$label audit_plan nov}
+	</td>
+	<td>
+		<input type="checkbox" {$nov_notbox}>
+	</td>
+	<td>
+		{$searchtype_nov}
+	</td>
+	<td>
+		{$nov_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nov_editcontrol1}&nbsp;
+	</td>
+{END nov_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dece}">
+	{BEGIN dece_fieldblock}		
+	<td>
+		{$label audit_plan dece}
+	</td>
+	<td>
+		<input type="checkbox" {$dece_notbox}>
+	</td>
+	<td>
+		{$searchtype_dece}
+	</td>
+	<td>
+		{$dece_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dece_editcontrol1}&nbsp;
+	</td>
+{END dece_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Cari</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Set semula</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Kembali ke senarai</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

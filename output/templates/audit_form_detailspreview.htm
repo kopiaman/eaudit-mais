@@ -1,0 +1,85 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel audit_form detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Perincian dijumpai: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Displaying first: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$ref_class}">{$label audit_form ref}</th>
+			<th class="{$planID_class}">{$label audit_form planID}</th>
+			<th class="{$aTypeCode_class}">{$label audit_form aTypeCode}</th>
+			<th class="{$aStatus_class}">{$label audit_form aStatus}</th>
+			<th class="{$userID_class}">{$label audit_form userID}</th>
+			<th class="{$userCheck_class}">{$label audit_form userCheck}</th>
+			<th class="{$userApprove_class}">{$label audit_form userApprove}</th>
+			<th class="{$userAuditee_class}">{$label audit_form userAuditee}</th>
+			<th class="{$aDate_class}">{$label audit_form aDate}</th>
+			<th class="{$dueDate_class}">{$label audit_form dueDate}</th>
+			<th class="{$dueDate2_class}">{$label audit_form dueDate2}</th>
+			<th class="{$dueDate3_class}">{$label audit_form dueDate3}</th>
+			<th class="{$replyPeriod_class}">{$label audit_form replyPeriod}</th>
+			<th class="{$replyPeriod2_class}">{$label audit_form replyPeriod2}</th>
+			<th class="{$replyPeriod3_class}">{$label audit_form replyPeriod3}</th>
+			<th class="{$opt_class}">{$label audit_form opt}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$ref_class}">{$ref_value}</td>
+			<td class="{$planID_class}">{$planID_value}</td>
+			<td class="{$aTypeCode_class}">{$aTypeCode_value}</td>
+			<td class="{$aStatus_class}">{$aStatus_value}</td>
+			<td class="{$userID_class}">{$userID_value}</td>
+			<td class="{$userCheck_class}">{$userCheck_value}</td>
+			<td class="{$userApprove_class}">{$userApprove_value}</td>
+			<td class="{$userAuditee_class}">{$userAuditee_value}</td>
+			<td class="{$aDate_class}">{$aDate_value}</td>
+			<td class="{$dueDate_class}">{$dueDate_value}</td>
+			<td class="{$dueDate2_class}">{$dueDate2_value}</td>
+			<td class="{$dueDate3_class}">{$dueDate3_value}</td>
+			<td class="{$replyPeriod_class}">{$replyPeriod_value}</td>
+			<td class="{$replyPeriod2_class}">{$replyPeriod2_value}</td>
+			<td class="{$replyPeriod3_class}">{$replyPeriod3_value}</td>
+			<td class="{$opt_class}">{$opt_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

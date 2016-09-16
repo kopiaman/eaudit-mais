@@ -1,0 +1,98 @@
+body.page-search5
+{
+padding-top:10px; padding-left:10px;
+}
+.page-search5 .rnr-c-fields,
+  .rnr-pagewrapper .page-search5 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-search5 .rnr-c-fields,
+  .rnr-pagewrapper .page-search5 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-search5 .rnr-cw-fields,
+  .rnr-pagewrapper .page-search5 .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-cw-fields
+{
+text-align: left;
+}
+.page-search5 .rnr-b-srchheader,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchheader
+{
+white-space: nowrap;
+}
+.page-search5 .rnr-b-srchheader,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchheader
+{
+text-align: right;
+}
+.page-search5 .rnr-b-srchheader > *,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchheader > *
+{
+font-size: 120%;
+}
+.page-search5 .rnr-b-srchconditions,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchconditions,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchconditions
+{
+white-space: nowrap;
+}
+.page-search5 .rnr-b-srchconditions,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchconditions,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchconditions
+{
+text-align: right;
+}
+.page-search5 .rnr-b-srchconditions > *,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchconditions > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchconditions > *
+{
+
+}
+.page-search5 .rnr-b-srchfields,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchfields
+{
+white-space: nowrap;
+}
+.page-search5 .rnr-b-srchfields,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchfields
+{
+text-align: right;
+}
+.page-search5 .rnr-b-srchfields > *,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchfields > *
+{
+
+}
+.page-search5 .rnr-b-srchbuttons,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons
+{
+white-space: nowrap;
+}
+.page-search5 .rnr-b-srchbuttons,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons
+{
+text-align: right;
+}
+.page-search5 .rnr-b-srchbuttons > *,
+  .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-search5 .rnr-b-srchbuttons > *
+{
+
+}
+body.page-search5 .rnr-top
+{
+padding-right: 5px;
+}

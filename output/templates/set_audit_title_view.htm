@@ -1,0 +1,221 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fview} rnr-wrapper rnr-cbw-fview">
+
+{BEGIN container_fview}
+<div class="rnr-c rnr-cv rnr-c-fview">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel set_audit_title view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields_atop {$brickclass_viewfields_atop}"><div class="rnr-simplefields">
+	{BEGIN tid_fieldblock}
+<div data-fieldname="tid" class="rnr-field style1 {$fielddispclass_tid}">
+  <div class="rnr-label above">{$label set_audit_title tid}:</div>
+  <div class="rnr-control style3">{$tid_value}</div>
+</div>
+{END tid_fieldblock}
+	{BEGIN aid_fieldblock}
+<div data-fieldname="aid" class="rnr-field style1 {$fielddispclass_aid}">
+  <div class="rnr-label above">{$label set_audit_title aid}:</div>
+  <div class="rnr-control style3">{$aid_value}</div>
+</div>
+{END aid_fieldblock}
+	{BEGIN aTitle_fieldblock}
+<div data-fieldname="aTitle" class="rnr-field style1 {$fielddispclass_aTitle}">
+  <div class="rnr-label above">{$label set_audit_title aTitle}:</div>
+  <div class="rnr-control style3">{$aTitle_value}</div>
+</div>
+{END aTitle_fieldblock}
+	{BEGIN jan_fieldblock}
+<div data-fieldname="jan" class="rnr-field style1 {$fielddispclass_jan}">
+  <div class="rnr-label above">{$label set_audit_title jan}:</div>
+  <div class="rnr-control style3">{$jan_value}</div>
+</div>
+{END jan_fieldblock}
+	{BEGIN feb_fieldblock}
+<div data-fieldname="feb" class="rnr-field style1 {$fielddispclass_feb}">
+  <div class="rnr-label above">{$label set_audit_title feb}:</div>
+  <div class="rnr-control style3">{$feb_value}</div>
+</div>
+{END feb_fieldblock}
+	{BEGIN aYear_fieldblock}
+<div data-fieldname="aYear" class="rnr-field style1 {$fielddispclass_aYear}">
+  <div class="rnr-label above">{$label set_audit_title aYear}:</div>
+  <div class="rnr-control style3">{$aYear_value}</div>
+</div>
+{END aYear_fieldblock}
+	{BEGIN mac_fieldblock}
+<div data-fieldname="mac" class="rnr-field style1 {$fielddispclass_mac}">
+  <div class="rnr-label above">{$label set_audit_title mac}:</div>
+  <div class="rnr-control style3">{$mac_value}</div>
+</div>
+{END mac_fieldblock}
+	{BEGIN apr_fieldblock}
+<div data-fieldname="apr" class="rnr-field style1 {$fielddispclass_apr}">
+  <div class="rnr-label above">{$label set_audit_title apr}:</div>
+  <div class="rnr-control style3">{$apr_value}</div>
+</div>
+{END apr_fieldblock}
+	{BEGIN may_fieldblock}
+<div data-fieldname="may" class="rnr-field style1 {$fielddispclass_may}">
+  <div class="rnr-label above">{$label set_audit_title may}:</div>
+  <div class="rnr-control style3">{$may_value}</div>
+</div>
+{END may_fieldblock}
+	{BEGIN jun_fieldblock}
+<div data-fieldname="jun" class="rnr-field style1 {$fielddispclass_jun}">
+  <div class="rnr-label above">{$label set_audit_title jun}:</div>
+  <div class="rnr-control style3">{$jun_value}</div>
+</div>
+{END jun_fieldblock}
+	{BEGIN jul_fieldblock}
+<div data-fieldname="jul" class="rnr-field style1 {$fielddispclass_jul}">
+  <div class="rnr-label above">{$label set_audit_title jul}:</div>
+  <div class="rnr-control style3">{$jul_value}</div>
+</div>
+{END jul_fieldblock}
+	{BEGIN aug_fieldblock}
+<div data-fieldname="aug" class="rnr-field style1 {$fielddispclass_aug}">
+  <div class="rnr-label above">{$label set_audit_title aug}:</div>
+  <div class="rnr-control style3">{$aug_value}</div>
+</div>
+{END aug_fieldblock}
+	{BEGIN sep_fieldblock}
+<div data-fieldname="sep" class="rnr-field style1 {$fielddispclass_sep}">
+  <div class="rnr-label above">{$label set_audit_title sep}:</div>
+  <div class="rnr-control style3">{$sep_value}</div>
+</div>
+{END sep_fieldblock}
+	{BEGIN oct_fieldblock}
+<div data-fieldname="oct" class="rnr-field style1 {$fielddispclass_oct}">
+  <div class="rnr-label above">{$label set_audit_title oct}:</div>
+  <div class="rnr-control style3">{$oct_value}</div>
+</div>
+{END oct_fieldblock}
+	{BEGIN nov_fieldblock}
+<div data-fieldname="nov" class="rnr-field style1 {$fielddispclass_nov}">
+  <div class="rnr-label above">{$label set_audit_title nov}:</div>
+  <div class="rnr-control style3">{$nov_value}</div>
+</div>
+{END nov_fieldblock}
+	{BEGIN dec_fieldblock}
+<div data-fieldname="dec" class="rnr-field style1 {$fielddispclass_dec}">
+  <div class="rnr-label above">{$label set_audit_title dec}:</div>
+  <div class="rnr-control style3">{$dec_value}</div>
+</div>
+{END dec_fieldblock}
+</div></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Kembali ke senarai</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Tutup tetingkap</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Sunting</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_fview}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

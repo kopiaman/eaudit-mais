@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("all",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Ke_Penyemak1';if(!pageObj.buttonEventBefore['Ke_Penyemak1']){pageObj.buttonEventBefore['Ke_Penyemak1']=function(params,ctrl,pageObj,proxy,pageid,rowData){ctrl.setMessage("Loading...");}}
+if(!pageObj.buttonEventAfter['Ke_Penyemak1']){pageObj.buttonEventAfter['Ke_Penyemak1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message="Berjaya Hantar ke Penyemak !!!";ctrl.setMessage(message);}}
+$('a[id=Ke_Penyemak1]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="Ke_Penyemak1"+"_"+Runner.genId();var button_Ke_Penyemak1=new Runner.form.Button({id:this.id,btnName:"Ke_Penyemak1"});button_Ke_Penyemak1.init({args:[pageObj,proxy,pageid]});});});

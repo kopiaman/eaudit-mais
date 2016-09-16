@@ -1,0 +1,140 @@
+body.page-edit_basic_left
+{
+padding-top:10px; padding-left:10px;
+}
+.page-edit_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-edit_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-edit_basic_left .rnr-cw-fields,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-cw-fields
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-editheader,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader
+{
+white-space: nowrap;
+}
+.page-edit_basic_left .rnr-b-editheader,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-editheader > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editheader > *
+{
+font-size: 120%;
+}
+.page-edit_basic_left .rnr-b-message,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-edit_basic_left .rnr-b-message,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-message
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-message > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-message > *
+{
+
+}
+.page-edit_basic_left .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit
+{
+white-space: nowrap;
+}
+.page-edit_basic_left .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-multistep_nav_edit > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-multistep_nav_edit > *
+{
+
+}
+.page-edit_basic_left .rnr-b-editfields_simple,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple
+{
+white-space: normal;
+}
+.page-edit_basic_left .rnr-b-editfields_simple,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-editfields_simple > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editfields_simple > *
+{
+
+}
+.page-edit_basic_left .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons
+{
+white-space: nowrap;
+}
+.page-edit_basic_left .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editbuttons > *
+{
+
+}
+.page-edit_basic_left .rnr-c-details,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-edit_basic_left .rnr-b-editdetails,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails
+{
+white-space: nowrap;
+}
+.page-edit_basic_left .rnr-b-editdetails,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails
+{
+text-align: left;
+}
+.page-edit_basic_left .rnr-b-editdetails > *,
+  .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit_basic_left .rnr-b-editdetails > *
+{
+
+}
+body.page-edit_basic_left .rnr-top
+{
+padding-right: 5px;
+}

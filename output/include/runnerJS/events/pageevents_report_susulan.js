@@ -1,0 +1,8 @@
+
+Runner.pages.PageSettings.addPageEvent("report_susulan",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='LAPORAN';if(!pageObj.buttonEventBefore['LAPORAN']){pageObj.buttonEventBefore['LAPORAN']=function(params,ctrl,pageObj,proxy,pageid,rowData){ctrl.setMessage("Load...");}}
+if(!pageObj.buttonEventAfter['LAPORAN']){pageObj.buttonEventAfter['LAPORAN']=function(result,ctrl,pageObj,proxy,pageid,rowData){var aYear=result['aYear'];var viewPlan="website/viewSusulanCombine.php?aYear="+aYear;window.open(viewPlan,"_blank");}}
+$('a[id=LAPORAN]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="LAPORAN"+"_"+Runner.genId();var button_LAPORAN=new Runner.form.Button({id:this.id,btnName:"LAPORAN"});button_LAPORAN.init({args:[pageObj,proxy,pageid]});});});Runner.pages.PageSettings.addPageEvent("report_susulan",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='TERPERINCI';if(!pageObj.buttonEventBefore['TERPERINCI']){pageObj.buttonEventBefore['TERPERINCI']=function(params,ctrl,pageObj,proxy,pageid,rowData){ctrl.setMessage("Load...");}}
+if(!pageObj.buttonEventAfter['TERPERINCI']){pageObj.buttonEventAfter['TERPERINCI']=function(result,ctrl,pageObj,proxy,pageid,rowData){var aYear=result['aYear'];var viewPlan="website/viewSusulanDetailCombine.php?aYear="+aYear;window.open(viewPlan,"_blank");}}
+$('a[id=TERPERINCI]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="TERPERINCI"+"_"+Runner.genId();var button_TERPERINCI=new Runner.form.Button({id:this.id,btnName:"TERPERINCI"});button_TERPERINCI.init({args:[pageObj,proxy,pageid]});});});
