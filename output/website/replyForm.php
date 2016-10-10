@@ -43,7 +43,7 @@ audit_info.iStatus,
 audit_info.reply_attachment, audit_info.reply_attachment2, audit_info.reply_attachment3,
 reference_detail.detail AS rujukan
 FROM audit_info
-INNER JOIN `reference_detail` ON audit_info.refyID = reference_detail.refyID
+LEFT JOIN `reference_detail` ON audit_info.refyID = reference_detail.refyID
 WHERE audit_info.fid=$fid";
 $query_detail=mysql_query($sql_detail,$conn);
 $detail=mysql_fetch_array($query_detail);
