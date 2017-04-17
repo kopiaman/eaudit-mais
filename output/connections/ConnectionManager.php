@@ -251,17 +251,14 @@ class ConnectionManager
 		$data["DBPath"] = "db"; //currently unused	
 		$data["useServerMapPath"] = 1; //currently unused
 		
-$host="localhost";
-$user="eaudit_user";
-$pwd="haisiti";
-$port="";
-$sys_dbname="eaudit_main";
-$data["connInfo"][0] = $host;
-$data["connInfo"][1] = $user;
-$data["connInfo"][2] = $pwd;
-$data["connInfo"][3] = $port;
-$data["connInfo"][4] = $sys_dbname;
-;
+		$data["connInfo"][0] = "localhost";
+		$data["connInfo"][1] = "root";
+		$data["connInfo"][2] = "";
+		$data["connInfo"][3] = "";
+		$data["connInfo"][4] = "eaudit";
+		$data["connInfo"][5] = ""; //currently unused
+		$data["connInfo"][6] = "1"; //currently unused
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=;Database=eaudit;OPTION=3";
 		$connectionsData["Tables"] = $data;
 		$this->_connectionsData = $connectionsData;
 	}

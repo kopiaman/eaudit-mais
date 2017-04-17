@@ -25,7 +25,8 @@
 </head>
 <?php 
 require_once('../include/dbcommon.php');
-$host="localhost"; $user="eaudit"; $pwd="haisiti";$sys_dbname="eaudit";
+$host="localhost"; $user="root"; $pwd="";$sys_dbname="eaudit";
+//$host="localhost"; $user="eaudit"; $pwd="haisiti";$sys_dbname="eaudit";
 //$host="localhost"; $user="kreatiwi_user"; $pwd="gengmalay86";$sys_dbname="kreatiwi_eaudit";
 $conn = mysql_connect($host, $user, $pwd) or trigger_error(mysql_error(),E_USER_ERROR);
 mysql_select_db($sys_dbname, $conn);

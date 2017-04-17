@@ -4,18 +4,23 @@ $aYear=$_GET['aYear'];
 $orga=$_GET['orga'];
 
 $sql_aktiviti= "
-SELECT
-audit_plan.planID AS planID,
-audit_plan.aTitle AS tajuk,
-COUNT(audit_form.aStatus) AS bilIsu,
-SUM(IF(audit_form.aStatus='Selesai' OR audit_form.aStatus='Selesai(KIV)', 1, 0)) AS selesai,
-SUM(IF(audit_form.aStatus!='Selesai' AND audit_form.aStatus!='Selesai(KIV)' AND audit_form.aStatus!='Peringatan 1' AND audit_form.aStatus!='Peringatan 2', 1, 0)) AS sedang,
-SUM(IF(audit_form.aStatus='Peringatan 1' OR audit_form.aStatus='Peringatan 2', 1, 0)) AS tidak
-FROM audit_form
-INNER JOIN audit_plan ON audit_form.planID = audit_plan.planID
-LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
-WHERE audit_plan.aYear=$aYear
-GROUP BY audit_form.planID";
+SELECT planID, tajuk, selesai, sedang, tidak, (selesai+sedang+tidak) AS bilIsu 
+FROM
+(
+	SELECT
+	audit_plan.planID AS planID,
+	audit_plan.aTitle AS tajuk,
+	COUNT(audit_form.aStatus) AS bilIsu,
+	SUM(IF(audit_form.aStatus LIKE '%Selesai%', 1, 0)) AS selesai,
+	SUM(IF(audit_form.aStatus LIKE 'Query Dihantar' OR audit_form.aStatus LIKE '%Maklum Balas%' OR audit_form.aStatus LIKE '%Susulan%', 1, 0)) AS sedang,
+	SUM(IF(audit_form.aStatus LIKE '%Peringatan%', 1, 0)) AS tidak
+	FROM audit_form
+	LEFT JOIN audit_plan ON audit_form.planID = audit_plan.planID
+	LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
+	WHERE audit_plan.aYear=$aYear
+	GROUP BY audit_form.planID
+) Sub2
+";
 $query_aktiviti=mysql_query($sql_aktiviti,$conn);
 $aktiviti=mysql_fetch_array($query_aktiviti);
 
@@ -24,12 +29,11 @@ $sql_Totalaktiviti= "
 SELECT
 audit_plan.planID AS planID,
 audit_plan.aTitle AS tajuk,
-COUNT(audit_form.aStatus) AS bilIsu,
-SUM(IF(audit_form.aStatus='Selesai' OR audit_form.aStatus='Selesai(KIV)', 1, 0)) AS selesai,
-SUM(IF(audit_form.aStatus!='Selesai' AND audit_form.aStatus!='Selesai(KIV)' AND audit_form.aStatus!='Peringatan 1' AND audit_form.aStatus!='Peringatan 2', 1, 0)) AS sedang,
-SUM(IF(audit_form.aStatus='Peringatan 1' OR audit_form.aStatus='Peringatan 2', 1, 0)) AS tidak
+SUM(IF(audit_form.aStatus LIKE '%Selesai%', 1, 0)) AS selesai,
+SUM(IF(audit_form.aStatus LIKE 'Query Dihantar' OR audit_form.aStatus LIKE '%Maklum Balas%' OR audit_form.aStatus LIKE '%Susulan%', 1, 0)) AS sedang,
+SUM(IF(audit_form.aStatus LIKE '%Peringatan%', 1, 0)) AS tidak
 FROM audit_form
-INNER JOIN audit_plan ON audit_form.planID = audit_plan.planID
+LEFT JOIN audit_plan ON audit_form.planID = audit_plan.planID
 LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
 WHERE audit_plan.aYear=$aYear";
 $query_Totalaktiviti=mysql_query($sql_Totalaktiviti,$conn);
@@ -72,8 +76,8 @@ $total=mysql_fetch_array($query_Totalaktiviti);
 			audit_form.planID,
 			audit_info.finding
 			FROM audit_form
-			INNER JOIN audit_info ON audit_form.fid = audit_info.fid
-			WHERE audit_form.planID=$planID AND (audit_form.aStatus='Selesai' OR audit_form.aStatus='Selesai(KIV)')";
+			LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
+			WHERE audit_form.planID=$planID AND (audit_form.aStatus LIKE '%Selesai%')";
 			$query_isuDone=mysql_query($sql_isuDone,$conn);
 			$isuDone=mysql_fetch_array($query_isuDone); 
 			
@@ -83,10 +87,10 @@ $total=mysql_fetch_array($query_Totalaktiviti);
 			audit_form.planID,
 			audit_info.finding
 			FROM audit_form
-			INNER JOIN audit_info ON audit_form.fid = audit_info.fid
+			LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
 			WHERE audit_form.planID=$planID 
-			AND audit_form.aStatus!='Selesai' AND audit_form.aStatus!='Selesai(KIV)' 
-			AND audit_form.aStatus!='Peringatan 1' AND audit_form.aStatus!='Peringatan 2'";
+			AND audit_form.aStatus LIKE 'Query Dihantar' OR audit_form.aStatus LIKE '%Maklum Balas%' OR audit_form.aStatus LIKE '%Susulan%'
+			";
 			$query_isuSedang=mysql_query($sql_isuSedang,$conn);
 			$isuSedang=mysql_fetch_array($query_isuSedang);
 			
@@ -97,9 +101,9 @@ $total=mysql_fetch_array($query_Totalaktiviti);
 			audit_form.planID,
 			audit_info.finding
 			FROM audit_form
-			INNER JOIN audit_info ON audit_form.fid = audit_info.fid
+			LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
 			WHERE audit_form.planID=$planID 
-			AND audit_form.aStatus='Peringatan 1' OR audit_form.aStatus='Peringatan 2'";
+			AND audit_form.aStatus LIKE '%Peringatan%' ";
 			$query_isuTidak=mysql_query($sql_isuTidak,$conn);
 			$isuTidak=mysql_fetch_array($query_isuTidak);
 				   
@@ -156,7 +160,7 @@ $total=mysql_fetch_array($query_Totalaktiviti);
           </tr><?php $i++; }while($aktiviti=mysql_fetch_array($query_aktiviti))  ?>
           <tr>
             <td colspan="2" align="center" valign="top">&nbsp;</td>
-            <td align="center" valign="top"><?php echo $total['bilIsu'] ?></td>
+            <td align="center" valign="top"><?php echo $total['selesai'] + $total['sedang'] + $total['tidak']?></td>
             <td align="center" valign="top"><?php echo $total['selesai'] ?></td>
             <td align="center" valign="top"><?php echo $total['sedang'] ?></td>
             <td align="center" valign="top"><?php echo $total['tidak'] ?></td>

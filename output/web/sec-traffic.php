@@ -3,16 +3,20 @@ $aYear=date('Y');
 
 $sql_query= "
 SELECT
-COUNT(aStatus) AS total,
-coalesce(sum(aStatus!='Peringatan 1' AND aStatus!='Peringatan 2' AND aStatus!='Selesai' AND aStatus!='Selesai(KIV)'), 0) AS yellow,
-coalesce(sum(aStatus='Peringatan 1' OR aStatus='Peringatan 2'), 0) AS red,
-coalesce(sum(aStatus='Selesai' OR aStatus='Selesai(KIV)'), 0) AS green
-FROM audit_form
-WHERE year(aDate) =$aYear";
+    
+    SUM(IF(audit_form.aStatus LIKE '%Selesai%', 1, 0)) AS green,
+    SUM(IF(audit_form.aStatus LIKE 'Query Dihantar' OR audit_form.aStatus LIKE '%Maklum Balas%' OR audit_form.aStatus LIKE '%Susulan%', 1, 0)) AS yellow,
+    SUM(IF(audit_form.aStatus LIKE '%Peringatan%', 1, 0)) AS red
+    FROM audit_form
+    LEFT JOIN audit_plan ON audit_form.planID = audit_plan.planID
+    LEFT JOIN audit_info ON audit_form.fid = audit_info.fid
+    WHERE audit_plan.aYear=$aYear
+    
+";
 $query_query=mysql_query($sql_query,$conn);
 $query=mysql_fetch_array($query_query);
 ?>
-<h1>PRESTASI AUDITAN SUSULAN</h1>
+<h1>PRESTASI AUDITAN SUSULAN <?php echo $aYear ?></h1>
 
 <div class="table-responsive">
 
@@ -26,7 +30,7 @@ $query=mysql_fetch_array($query_query);
                 </thead>
                 <tbody >
 
-		 
+         
 
                     <tr >
                         <td>Isu / Penambahbaikan Belum Diambil  Tindakan</td>
@@ -46,8 +50,8 @@ $query=mysql_fetch_array($query_query);
                     <tr >
                         <td height="59">Isu Selesai / Telah Ambil Tindakan</td>
                         <td style="background-color:black"><div class="icon" style="background-color:green; color:white"> 
-						 <a href="../website/viewSusulanDetailCombine.php?aYear=<?php echo date('Y') ?>" target="_blank"><?php echo $query['green']; ?> </a></div></td>
-						
+                         <a href="../website/viewSusulanDetailCombine.php?aYear=<?php echo date('Y') ?>" target="_blank"><?php echo $query['green']; ?> </a></div></td>
+                        
                    
                     </tr>
  
